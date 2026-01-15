@@ -1,0 +1,479 @@
+diff --git a/node_modules/react-native-settings/android/build.gradle b/node_modules/react-native-settings/android/build.gradle
+index 9f210cd..42e53ad 100644
+--- a/node_modules/react-native-settings/android/build.gradle
++++ b/node_modules/react-native-settings/android/build.gradle
+@@ -20,7 +20,7 @@ android {
+     buildToolsVersion projectVar('buildToolsVersion', '23.0.1')
+ 
+     defaultConfig {
+-        minSdkVersion 16
++        minSdkVersion 24
+         targetSdkVersion projectVar('targetSdkVersion', 22)
+         versionCode 1
+         versionName "1.0"
+diff --git a/node_modules/react-native-settings/android/build/.transforms/ada497d424f9be98791803eee62ea83a/results.bin b/node_modules/react-native-settings/android/build/.transforms/ada497d424f9be98791803eee62ea83a/results.bin
+new file mode 100644
+index 0000000..0d259dd
+--- /dev/null
++++ b/node_modules/react-native-settings/android/build/.transforms/ada497d424f9be98791803eee62ea83a/results.bin
+@@ -0,0 +1 @@
++o/classes
+diff --git a/node_modules/react-native-settings/android/build/.transforms/ada497d424f9be98791803eee62ea83a/transformed/classes/classes_dex/classes.dex b/node_modules/react-native-settings/android/build/.transforms/ada497d424f9be98791803eee62ea83a/transformed/classes/classes_dex/classes.dex
+new file mode 100644
+index 0000000..5c1b4ff
+Binary files /dev/null and b/node_modules/react-native-settings/android/build/.transforms/ada497d424f9be98791803eee62ea83a/transformed/classes/classes_dex/classes.dex differ
+diff --git a/node_modules/react-native-settings/android/build/.transforms/ed87c82305b350f61ddd90c9de2a4d57/results.bin b/node_modules/react-native-settings/android/build/.transforms/ed87c82305b350f61ddd90c9de2a4d57/results.bin
+new file mode 100644
+index 0000000..7ed749e
+--- /dev/null
++++ b/node_modules/react-native-settings/android/build/.transforms/ed87c82305b350f61ddd90c9de2a4d57/results.bin
+@@ -0,0 +1 @@
++o/bundleLibRuntimeToDirDebug
+diff --git a/node_modules/react-native-settings/android/build/.transforms/ed87c82305b350f61ddd90c9de2a4d57/transformed/bundleLibRuntimeToDirDebug/bundleLibRuntimeToDirDebug_dex/io/rumors/reactnativesettings/BuildConfig.dex b/node_modules/react-native-settings/android/build/.transforms/ed87c82305b350f61ddd90c9de2a4d57/transformed/bundleLibRuntimeToDirDebug/bundleLibRuntimeToDirDebug_dex/io/rumors/reactnativesettings/BuildConfig.dex
+new file mode 100644
+index 0000000..ea376cc
+Binary files /dev/null and b/node_modules/react-native-settings/android/build/.transforms/ed87c82305b350f61ddd90c9de2a4d57/transformed/bundleLibRuntimeToDirDebug/bundleLibRuntimeToDirDebug_dex/io/rumors/reactnativesettings/BuildConfig.dex differ
+diff --git a/node_modules/react-native-settings/android/build/.transforms/ed87c82305b350f61ddd90c9de2a4d57/transformed/bundleLibRuntimeToDirDebug/bundleLibRuntimeToDirDebug_dex/io/rumors/reactnativesettings/Constants.dex b/node_modules/react-native-settings/android/build/.transforms/ed87c82305b350f61ddd90c9de2a4d57/transformed/bundleLibRuntimeToDirDebug/bundleLibRuntimeToDirDebug_dex/io/rumors/reactnativesettings/Constants.dex
+new file mode 100644
+index 0000000..275cb3a
+Binary files /dev/null and b/node_modules/react-native-settings/android/build/.transforms/ed87c82305b350f61ddd90c9de2a4d57/transformed/bundleLibRuntimeToDirDebug/bundleLibRuntimeToDirDebug_dex/io/rumors/reactnativesettings/Constants.dex differ
+diff --git a/node_modules/react-native-settings/android/build/.transforms/ed87c82305b350f61ddd90c9de2a4d57/transformed/bundleLibRuntimeToDirDebug/bundleLibRuntimeToDirDebug_dex/io/rumors/reactnativesettings/RNSettingsModule$1.dex b/node_modules/react-native-settings/android/build/.transforms/ed87c82305b350f61ddd90c9de2a4d57/transformed/bundleLibRuntimeToDirDebug/bundleLibRuntimeToDirDebug_dex/io/rumors/reactnativesettings/RNSettingsModule$1.dex
+new file mode 100644
+index 0000000..3af915c
+Binary files /dev/null and b/node_modules/react-native-settings/android/build/.transforms/ed87c82305b350f61ddd90c9de2a4d57/transformed/bundleLibRuntimeToDirDebug/bundleLibRuntimeToDirDebug_dex/io/rumors/reactnativesettings/RNSettingsModule$1.dex differ
+diff --git a/node_modules/react-native-settings/android/build/.transforms/ed87c82305b350f61ddd90c9de2a4d57/transformed/bundleLibRuntimeToDirDebug/bundleLibRuntimeToDirDebug_dex/io/rumors/reactnativesettings/RNSettingsModule$SettingReceiver.dex b/node_modules/react-native-settings/android/build/.transforms/ed87c82305b350f61ddd90c9de2a4d57/transformed/bundleLibRuntimeToDirDebug/bundleLibRuntimeToDirDebug_dex/io/rumors/reactnativesettings/RNSettingsModule$SettingReceiver.dex
+new file mode 100644
+index 0000000..1af9a36
+Binary files /dev/null and b/node_modules/react-native-settings/android/build/.transforms/ed87c82305b350f61ddd90c9de2a4d57/transformed/bundleLibRuntimeToDirDebug/bundleLibRuntimeToDirDebug_dex/io/rumors/reactnativesettings/RNSettingsModule$SettingReceiver.dex differ
+diff --git a/node_modules/react-native-settings/android/build/.transforms/ed87c82305b350f61ddd90c9de2a4d57/transformed/bundleLibRuntimeToDirDebug/bundleLibRuntimeToDirDebug_dex/io/rumors/reactnativesettings/RNSettingsModule.dex b/node_modules/react-native-settings/android/build/.transforms/ed87c82305b350f61ddd90c9de2a4d57/transformed/bundleLibRuntimeToDirDebug/bundleLibRuntimeToDirDebug_dex/io/rumors/reactnativesettings/RNSettingsModule.dex
+new file mode 100644
+index 0000000..d0dcbac
+Binary files /dev/null and b/node_modules/react-native-settings/android/build/.transforms/ed87c82305b350f61ddd90c9de2a4d57/transformed/bundleLibRuntimeToDirDebug/bundleLibRuntimeToDirDebug_dex/io/rumors/reactnativesettings/RNSettingsModule.dex differ
+diff --git a/node_modules/react-native-settings/android/build/.transforms/ed87c82305b350f61ddd90c9de2a4d57/transformed/bundleLibRuntimeToDirDebug/bundleLibRuntimeToDirDebug_dex/io/rumors/reactnativesettings/RNSettingsPackage.dex b/node_modules/react-native-settings/android/build/.transforms/ed87c82305b350f61ddd90c9de2a4d57/transformed/bundleLibRuntimeToDirDebug/bundleLibRuntimeToDirDebug_dex/io/rumors/reactnativesettings/RNSettingsPackage.dex
+new file mode 100644
+index 0000000..be03f7e
+Binary files /dev/null and b/node_modules/react-native-settings/android/build/.transforms/ed87c82305b350f61ddd90c9de2a4d57/transformed/bundleLibRuntimeToDirDebug/bundleLibRuntimeToDirDebug_dex/io/rumors/reactnativesettings/RNSettingsPackage.dex differ
+diff --git a/node_modules/react-native-settings/android/build/.transforms/ed87c82305b350f61ddd90c9de2a4d57/transformed/bundleLibRuntimeToDirDebug/bundleLibRuntimeToDirDebug_dex/io/rumors/reactnativesettings/handlers/AirplaneModeSettingsHandler.dex b/node_modules/react-native-settings/android/build/.transforms/ed87c82305b350f61ddd90c9de2a4d57/transformed/bundleLibRuntimeToDirDebug/bundleLibRuntimeToDirDebug_dex/io/rumors/reactnativesettings/handlers/AirplaneModeSettingsHandler.dex
+new file mode 100644
+index 0000000..d164de0
+Binary files /dev/null and b/node_modules/react-native-settings/android/build/.transforms/ed87c82305b350f61ddd90c9de2a4d57/transformed/bundleLibRuntimeToDirDebug/bundleLibRuntimeToDirDebug_dex/io/rumors/reactnativesettings/handlers/AirplaneModeSettingsHandler.dex differ
+diff --git a/node_modules/react-native-settings/android/build/.transforms/ed87c82305b350f61ddd90c9de2a4d57/transformed/bundleLibRuntimeToDirDebug/bundleLibRuntimeToDirDebug_dex/io/rumors/reactnativesettings/handlers/CaptioningSettingsHandler.dex b/node_modules/react-native-settings/android/build/.transforms/ed87c82305b350f61ddd90c9de2a4d57/transformed/bundleLibRuntimeToDirDebug/bundleLibRuntimeToDirDebug_dex/io/rumors/reactnativesettings/handlers/CaptioningSettingsHandler.dex
+new file mode 100644
+index 0000000..8374c54
+Binary files /dev/null and b/node_modules/react-native-settings/android/build/.transforms/ed87c82305b350f61ddd90c9de2a4d57/transformed/bundleLibRuntimeToDirDebug/bundleLibRuntimeToDirDebug_dex/io/rumors/reactnativesettings/handlers/CaptioningSettingsHandler.dex differ
+diff --git a/node_modules/react-native-settings/android/build/.transforms/ed87c82305b350f61ddd90c9de2a4d57/transformed/bundleLibRuntimeToDirDebug/bundleLibRuntimeToDirDebug_dex/io/rumors/reactnativesettings/handlers/LocationSettingsHandler.dex b/node_modules/react-native-settings/android/build/.transforms/ed87c82305b350f61ddd90c9de2a4d57/transformed/bundleLibRuntimeToDirDebug/bundleLibRuntimeToDirDebug_dex/io/rumors/reactnativesettings/handlers/LocationSettingsHandler.dex
+new file mode 100644
+index 0000000..8cdf331
+Binary files /dev/null and b/node_modules/react-native-settings/android/build/.transforms/ed87c82305b350f61ddd90c9de2a4d57/transformed/bundleLibRuntimeToDirDebug/bundleLibRuntimeToDirDebug_dex/io/rumors/reactnativesettings/handlers/LocationSettingsHandler.dex differ
+diff --git a/node_modules/react-native-settings/android/build/.transforms/ed87c82305b350f61ddd90c9de2a4d57/transformed/bundleLibRuntimeToDirDebug/bundleLibRuntimeToDirDebug_dex/io/rumors/reactnativesettings/handlers/SettingsHandler.dex b/node_modules/react-native-settings/android/build/.transforms/ed87c82305b350f61ddd90c9de2a4d57/transformed/bundleLibRuntimeToDirDebug/bundleLibRuntimeToDirDebug_dex/io/rumors/reactnativesettings/handlers/SettingsHandler.dex
+new file mode 100644
+index 0000000..4e0c7b4
+Binary files /dev/null and b/node_modules/react-native-settings/android/build/.transforms/ed87c82305b350f61ddd90c9de2a4d57/transformed/bundleLibRuntimeToDirDebug/bundleLibRuntimeToDirDebug_dex/io/rumors/reactnativesettings/handlers/SettingsHandler.dex differ
+diff --git a/node_modules/react-native-settings/android/build/.transforms/ed87c82305b350f61ddd90c9de2a4d57/transformed/bundleLibRuntimeToDirDebug/bundleLibRuntimeToDirDebug_dex/io/rumors/reactnativesettings/listeners/CaptioningChangeListener$1.dex b/node_modules/react-native-settings/android/build/.transforms/ed87c82305b350f61ddd90c9de2a4d57/transformed/bundleLibRuntimeToDirDebug/bundleLibRuntimeToDirDebug_dex/io/rumors/reactnativesettings/listeners/CaptioningChangeListener$1.dex
+new file mode 100644
+index 0000000..33382d0
+Binary files /dev/null and b/node_modules/react-native-settings/android/build/.transforms/ed87c82305b350f61ddd90c9de2a4d57/transformed/bundleLibRuntimeToDirDebug/bundleLibRuntimeToDirDebug_dex/io/rumors/reactnativesettings/listeners/CaptioningChangeListener$1.dex differ
+diff --git a/node_modules/react-native-settings/android/build/.transforms/ed87c82305b350f61ddd90c9de2a4d57/transformed/bundleLibRuntimeToDirDebug/bundleLibRuntimeToDirDebug_dex/io/rumors/reactnativesettings/listeners/CaptioningChangeListener.dex b/node_modules/react-native-settings/android/build/.transforms/ed87c82305b350f61ddd90c9de2a4d57/transformed/bundleLibRuntimeToDirDebug/bundleLibRuntimeToDirDebug_dex/io/rumors/reactnativesettings/listeners/CaptioningChangeListener.dex
+new file mode 100644
+index 0000000..d72b2a5
+Binary files /dev/null and b/node_modules/react-native-settings/android/build/.transforms/ed87c82305b350f61ddd90c9de2a4d57/transformed/bundleLibRuntimeToDirDebug/bundleLibRuntimeToDirDebug_dex/io/rumors/reactnativesettings/listeners/CaptioningChangeListener.dex differ
+diff --git a/node_modules/react-native-settings/android/build/.transforms/ed87c82305b350f61ddd90c9de2a4d57/transformed/bundleLibRuntimeToDirDebug/bundleLibRuntimeToDirDebug_dex/io/rumors/reactnativesettings/receivers/AirplaneModeReceiver.dex b/node_modules/react-native-settings/android/build/.transforms/ed87c82305b350f61ddd90c9de2a4d57/transformed/bundleLibRuntimeToDirDebug/bundleLibRuntimeToDirDebug_dex/io/rumors/reactnativesettings/receivers/AirplaneModeReceiver.dex
+new file mode 100644
+index 0000000..fe273e2
+Binary files /dev/null and b/node_modules/react-native-settings/android/build/.transforms/ed87c82305b350f61ddd90c9de2a4d57/transformed/bundleLibRuntimeToDirDebug/bundleLibRuntimeToDirDebug_dex/io/rumors/reactnativesettings/receivers/AirplaneModeReceiver.dex differ
+diff --git a/node_modules/react-native-settings/android/build/.transforms/ed87c82305b350f61ddd90c9de2a4d57/transformed/bundleLibRuntimeToDirDebug/bundleLibRuntimeToDirDebug_dex/io/rumors/reactnativesettings/receivers/GpsLocationReceiver.dex b/node_modules/react-native-settings/android/build/.transforms/ed87c82305b350f61ddd90c9de2a4d57/transformed/bundleLibRuntimeToDirDebug/bundleLibRuntimeToDirDebug_dex/io/rumors/reactnativesettings/receivers/GpsLocationReceiver.dex
+new file mode 100644
+index 0000000..154f3e8
+Binary files /dev/null and b/node_modules/react-native-settings/android/build/.transforms/ed87c82305b350f61ddd90c9de2a4d57/transformed/bundleLibRuntimeToDirDebug/bundleLibRuntimeToDirDebug_dex/io/rumors/reactnativesettings/receivers/GpsLocationReceiver.dex differ
+diff --git a/node_modules/react-native-settings/android/build/.transforms/ed87c82305b350f61ddd90c9de2a4d57/transformed/bundleLibRuntimeToDirDebug/desugar_graph.bin b/node_modules/react-native-settings/android/build/.transforms/ed87c82305b350f61ddd90c9de2a4d57/transformed/bundleLibRuntimeToDirDebug/desugar_graph.bin
+new file mode 100644
+index 0000000..aa26ded
+Binary files /dev/null and b/node_modules/react-native-settings/android/build/.transforms/ed87c82305b350f61ddd90c9de2a4d57/transformed/bundleLibRuntimeToDirDebug/desugar_graph.bin differ
+diff --git a/node_modules/react-native-settings/android/build/generated/source/buildConfig/debug/io/rumors/reactnativesettings/BuildConfig.java b/node_modules/react-native-settings/android/build/generated/source/buildConfig/debug/io/rumors/reactnativesettings/BuildConfig.java
+new file mode 100644
+index 0000000..923d1b2
+--- /dev/null
++++ b/node_modules/react-native-settings/android/build/generated/source/buildConfig/debug/io/rumors/reactnativesettings/BuildConfig.java
+@@ -0,0 +1,10 @@
++/**
++ * Automatically generated file. DO NOT MODIFY
++ */
++package io.rumors.reactnativesettings;
++
++public final class BuildConfig {
++  public static final boolean DEBUG = Boolean.parseBoolean("true");
++  public static final String LIBRARY_PACKAGE_NAME = "io.rumors.reactnativesettings";
++  public static final String BUILD_TYPE = "debug";
++}
+diff --git a/node_modules/react-native-settings/android/build/intermediates/aapt_friendly_merged_manifests/debug/processDebugManifest/aapt/AndroidManifest.xml b/node_modules/react-native-settings/android/build/intermediates/aapt_friendly_merged_manifests/debug/processDebugManifest/aapt/AndroidManifest.xml
+new file mode 100644
+index 0000000..364e720
+--- /dev/null
++++ b/node_modules/react-native-settings/android/build/intermediates/aapt_friendly_merged_manifests/debug/processDebugManifest/aapt/AndroidManifest.xml
+@@ -0,0 +1,7 @@
++<?xml version="1.0" encoding="utf-8"?>
++<manifest xmlns:android="http://schemas.android.com/apk/res/android"
++    package="io.rumors.reactnativesettings" >
++
++    <uses-sdk android:minSdkVersion="16" />
++
++</manifest>
+\ No newline at end of file
+diff --git a/node_modules/react-native-settings/android/build/intermediates/aapt_friendly_merged_manifests/debug/processDebugManifest/aapt/output-metadata.json b/node_modules/react-native-settings/android/build/intermediates/aapt_friendly_merged_manifests/debug/processDebugManifest/aapt/output-metadata.json
+new file mode 100644
+index 0000000..80cbb8e
+--- /dev/null
++++ b/node_modules/react-native-settings/android/build/intermediates/aapt_friendly_merged_manifests/debug/processDebugManifest/aapt/output-metadata.json
+@@ -0,0 +1,18 @@
++{
++  "version": 3,
++  "artifactType": {
++    "type": "AAPT_FRIENDLY_MERGED_MANIFESTS",
++    "kind": "Directory"
++  },
++  "applicationId": "io.rumors.reactnativesettings",
++  "variantName": "debug",
++  "elements": [
++    {
++      "type": "SINGLE",
++      "filters": [],
++      "attributes": [],
++      "outputFile": "AndroidManifest.xml"
++    }
++  ],
++  "elementType": "File"
++}
+\ No newline at end of file
+diff --git a/node_modules/react-native-settings/android/build/intermediates/aar_main_jar/debug/syncDebugLibJars/classes.jar b/node_modules/react-native-settings/android/build/intermediates/aar_main_jar/debug/syncDebugLibJars/classes.jar
+new file mode 100644
+index 0000000..827636b
+Binary files /dev/null and b/node_modules/react-native-settings/android/build/intermediates/aar_main_jar/debug/syncDebugLibJars/classes.jar differ
+diff --git a/node_modules/react-native-settings/android/build/intermediates/aar_metadata/debug/writeDebugAarMetadata/aar-metadata.properties b/node_modules/react-native-settings/android/build/intermediates/aar_metadata/debug/writeDebugAarMetadata/aar-metadata.properties
+new file mode 100644
+index 0000000..1211b1e
+--- /dev/null
++++ b/node_modules/react-native-settings/android/build/intermediates/aar_metadata/debug/writeDebugAarMetadata/aar-metadata.properties
+@@ -0,0 +1,6 @@
++aarFormatVersion=1.0
++aarMetadataVersion=1.0
++minCompileSdk=1
++minCompileSdkExtension=0
++minAndroidGradlePluginVersion=1.0.0
++coreLibraryDesugaringEnabled=false
+diff --git a/node_modules/react-native-settings/android/build/intermediates/annotation_processor_list/debug/javaPreCompileDebug/annotationProcessors.json b/node_modules/react-native-settings/android/build/intermediates/annotation_processor_list/debug/javaPreCompileDebug/annotationProcessors.json
+new file mode 100644
+index 0000000..9e26dfe
+--- /dev/null
++++ b/node_modules/react-native-settings/android/build/intermediates/annotation_processor_list/debug/javaPreCompileDebug/annotationProcessors.json
+@@ -0,0 +1 @@
++{}
+\ No newline at end of file
+diff --git a/node_modules/react-native-settings/android/build/intermediates/annotations_typedef_file/debug/extractDebugAnnotations/typedefs.txt b/node_modules/react-native-settings/android/build/intermediates/annotations_typedef_file/debug/extractDebugAnnotations/typedefs.txt
+new file mode 100644
+index 0000000..e69de29
+diff --git a/node_modules/react-native-settings/android/build/intermediates/compile_library_classes_jar/debug/bundleLibCompileToJarDebug/classes.jar b/node_modules/react-native-settings/android/build/intermediates/compile_library_classes_jar/debug/bundleLibCompileToJarDebug/classes.jar
+new file mode 100644
+index 0000000..cf19f4d
+Binary files /dev/null and b/node_modules/react-native-settings/android/build/intermediates/compile_library_classes_jar/debug/bundleLibCompileToJarDebug/classes.jar differ
+diff --git a/node_modules/react-native-settings/android/build/intermediates/compile_r_class_jar/debug/generateDebugRFile/R.jar b/node_modules/react-native-settings/android/build/intermediates/compile_r_class_jar/debug/generateDebugRFile/R.jar
+new file mode 100644
+index 0000000..cd64ecf
+Binary files /dev/null and b/node_modules/react-native-settings/android/build/intermediates/compile_r_class_jar/debug/generateDebugRFile/R.jar differ
+diff --git a/node_modules/react-native-settings/android/build/intermediates/compile_symbol_list/debug/generateDebugRFile/R.txt b/node_modules/react-native-settings/android/build/intermediates/compile_symbol_list/debug/generateDebugRFile/R.txt
+new file mode 100644
+index 0000000..e69de29
+diff --git a/node_modules/react-native-settings/android/build/intermediates/incremental/debug-mergeJavaRes/merge-state b/node_modules/react-native-settings/android/build/intermediates/incremental/debug-mergeJavaRes/merge-state
+new file mode 100644
+index 0000000..1c983fc
+Binary files /dev/null and b/node_modules/react-native-settings/android/build/intermediates/incremental/debug-mergeJavaRes/merge-state differ
+diff --git a/node_modules/react-native-settings/android/build/intermediates/incremental/debug/packageDebugResources/compile-file-map.properties b/node_modules/react-native-settings/android/build/intermediates/incremental/debug/packageDebugResources/compile-file-map.properties
+new file mode 100644
+index 0000000..372eb93
+--- /dev/null
++++ b/node_modules/react-native-settings/android/build/intermediates/incremental/debug/packageDebugResources/compile-file-map.properties
+@@ -0,0 +1 @@
++#Fri Nov 28 16:57:41 BRT 2025
+diff --git a/node_modules/react-native-settings/android/build/intermediates/incremental/debug/packageDebugResources/merger.xml b/node_modules/react-native-settings/android/build/intermediates/incremental/debug/packageDebugResources/merger.xml
+new file mode 100644
+index 0000000..5990b32
+--- /dev/null
++++ b/node_modules/react-native-settings/android/build/intermediates/incremental/debug/packageDebugResources/merger.xml
+@@ -0,0 +1,2 @@
++<?xml version="1.0" encoding="utf-8"?>
++<merger version="3"><dataSet aapt-namespace="http://schemas.android.com/apk/res-auto" config="main$Generated" generated="true" ignore_pattern="!.svn:!.git:!.ds_store:!*.scc:.*:&lt;dir>_*:!CVS:!thumbs.db:!picasa.ini:!*~"><source path="/Users/claudiomontagnoli/Documents/Projects/mr-apps/appdaloja-expo/node_modules/react-native-settings/android/src/main/res"/></dataSet><dataSet aapt-namespace="http://schemas.android.com/apk/res-auto" config="main" generated-set="main$Generated" ignore_pattern="!.svn:!.git:!.ds_store:!*.scc:.*:&lt;dir>_*:!CVS:!thumbs.db:!picasa.ini:!*~"><source path="/Users/claudiomontagnoli/Documents/Projects/mr-apps/appdaloja-expo/node_modules/react-native-settings/android/src/main/res"/></dataSet><dataSet aapt-namespace="http://schemas.android.com/apk/res-auto" config="debug$Generated" generated="true" ignore_pattern="!.svn:!.git:!.ds_store:!*.scc:.*:&lt;dir>_*:!CVS:!thumbs.db:!picasa.ini:!*~"><source path="/Users/claudiomontagnoli/Documents/Projects/mr-apps/appdaloja-expo/node_modules/react-native-settings/android/src/debug/res"/></dataSet><dataSet aapt-namespace="http://schemas.android.com/apk/res-auto" config="debug" generated-set="debug$Generated" ignore_pattern="!.svn:!.git:!.ds_store:!*.scc:.*:&lt;dir>_*:!CVS:!thumbs.db:!picasa.ini:!*~"><source path="/Users/claudiomontagnoli/Documents/Projects/mr-apps/appdaloja-expo/node_modules/react-native-settings/android/src/debug/res"/></dataSet><dataSet aapt-namespace="http://schemas.android.com/apk/res-auto" config="generated$Generated" generated="true" ignore_pattern="!.svn:!.git:!.ds_store:!*.scc:.*:&lt;dir>_*:!CVS:!thumbs.db:!picasa.ini:!*~"><source path="/Users/claudiomontagnoli/Documents/Projects/mr-apps/appdaloja-expo/node_modules/react-native-settings/android/build/generated/res/resValues/debug"/></dataSet><dataSet aapt-namespace="http://schemas.android.com/apk/res-auto" config="generated" generated-set="generated$Generated" ignore_pattern="!.svn:!.git:!.ds_store:!*.scc:.*:&lt;dir>_*:!CVS:!thumbs.db:!picasa.ini:!*~"><source path="/Users/claudiomontagnoli/Documents/Projects/mr-apps/appdaloja-expo/node_modules/react-native-settings/android/build/generated/res/resValues/debug"/></dataSet><mergedItems/></merger>
+\ No newline at end of file
+diff --git a/node_modules/react-native-settings/android/build/intermediates/incremental/mergeDebugAssets/merger.xml b/node_modules/react-native-settings/android/build/intermediates/incremental/mergeDebugAssets/merger.xml
+new file mode 100644
+index 0000000..bfe7ba0
+--- /dev/null
++++ b/node_modules/react-native-settings/android/build/intermediates/incremental/mergeDebugAssets/merger.xml
+@@ -0,0 +1,2 @@
++<?xml version="1.0" encoding="utf-8"?>
++<merger version="3"><dataSet config="main" ignore_pattern="!.svn:!.git:!.ds_store:!*.scc:.*:&lt;dir>_*:!CVS:!thumbs.db:!picasa.ini:!*~"><source path="/Users/claudiomontagnoli/Documents/Projects/mr-apps/appdaloja-expo/node_modules/react-native-settings/android/src/main/assets"/></dataSet><dataSet config="debug" ignore_pattern="!.svn:!.git:!.ds_store:!*.scc:.*:&lt;dir>_*:!CVS:!thumbs.db:!picasa.ini:!*~"><source path="/Users/claudiomontagnoli/Documents/Projects/mr-apps/appdaloja-expo/node_modules/react-native-settings/android/src/debug/assets"/></dataSet><dataSet config="generated" ignore_pattern="!.svn:!.git:!.ds_store:!*.scc:.*:&lt;dir>_*:!CVS:!thumbs.db:!picasa.ini:!*~"><source path="/Users/claudiomontagnoli/Documents/Projects/mr-apps/appdaloja-expo/node_modules/react-native-settings/android/build/intermediates/shader_assets/debug/compileDebugShaders/out"/></dataSet></merger>
+\ No newline at end of file
+diff --git a/node_modules/react-native-settings/android/build/intermediates/incremental/mergeDebugJniLibFolders/merger.xml b/node_modules/react-native-settings/android/build/intermediates/incremental/mergeDebugJniLibFolders/merger.xml
+new file mode 100644
+index 0000000..0fb3e42
+--- /dev/null
++++ b/node_modules/react-native-settings/android/build/intermediates/incremental/mergeDebugJniLibFolders/merger.xml
+@@ -0,0 +1,2 @@
++<?xml version="1.0" encoding="utf-8"?>
++<merger version="3"><dataSet config="main" ignore_pattern="!.svn:!.git:!.ds_store:!*.scc:.*:&lt;dir>_*:!CVS:!thumbs.db:!picasa.ini:!*~"><source path="/Users/claudiomontagnoli/Documents/Projects/mr-apps/appdaloja-expo/node_modules/react-native-settings/android/src/main/jniLibs"/></dataSet><dataSet config="debug" ignore_pattern="!.svn:!.git:!.ds_store:!*.scc:.*:&lt;dir>_*:!CVS:!thumbs.db:!picasa.ini:!*~"><source path="/Users/claudiomontagnoli/Documents/Projects/mr-apps/appdaloja-expo/node_modules/react-native-settings/android/src/debug/jniLibs"/></dataSet></merger>
+\ No newline at end of file
+diff --git a/node_modules/react-native-settings/android/build/intermediates/incremental/mergeDebugShaders/merger.xml b/node_modules/react-native-settings/android/build/intermediates/incremental/mergeDebugShaders/merger.xml
+new file mode 100644
+index 0000000..e0751c2
+--- /dev/null
++++ b/node_modules/react-native-settings/android/build/intermediates/incremental/mergeDebugShaders/merger.xml
+@@ -0,0 +1,2 @@
++<?xml version="1.0" encoding="utf-8"?>
++<merger version="3"><dataSet config="main" ignore_pattern="!.svn:!.git:!.ds_store:!*.scc:.*:&lt;dir>_*:!CVS:!thumbs.db:!picasa.ini:!*~"><source path="/Users/claudiomontagnoli/Documents/Projects/mr-apps/appdaloja-expo/node_modules/react-native-settings/android/src/main/shaders"/></dataSet><dataSet config="debug" ignore_pattern="!.svn:!.git:!.ds_store:!*.scc:.*:&lt;dir>_*:!CVS:!thumbs.db:!picasa.ini:!*~"><source path="/Users/claudiomontagnoli/Documents/Projects/mr-apps/appdaloja-expo/node_modules/react-native-settings/android/src/debug/shaders"/></dataSet></merger>
+\ No newline at end of file
+diff --git a/node_modules/react-native-settings/android/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/io/rumors/reactnativesettings/BuildConfig.class b/node_modules/react-native-settings/android/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/io/rumors/reactnativesettings/BuildConfig.class
+new file mode 100644
+index 0000000..bedc9ed
+Binary files /dev/null and b/node_modules/react-native-settings/android/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/io/rumors/reactnativesettings/BuildConfig.class differ
+diff --git a/node_modules/react-native-settings/android/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/io/rumors/reactnativesettings/Constants.class b/node_modules/react-native-settings/android/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/io/rumors/reactnativesettings/Constants.class
+new file mode 100644
+index 0000000..dd270e4
+Binary files /dev/null and b/node_modules/react-native-settings/android/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/io/rumors/reactnativesettings/Constants.class differ
+diff --git a/node_modules/react-native-settings/android/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/io/rumors/reactnativesettings/RNSettingsModule$1.class b/node_modules/react-native-settings/android/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/io/rumors/reactnativesettings/RNSettingsModule$1.class
+new file mode 100644
+index 0000000..57c4184
+Binary files /dev/null and b/node_modules/react-native-settings/android/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/io/rumors/reactnativesettings/RNSettingsModule$1.class differ
+diff --git a/node_modules/react-native-settings/android/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/io/rumors/reactnativesettings/RNSettingsModule$SettingReceiver.class b/node_modules/react-native-settings/android/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/io/rumors/reactnativesettings/RNSettingsModule$SettingReceiver.class
+new file mode 100644
+index 0000000..f7bdb48
+Binary files /dev/null and b/node_modules/react-native-settings/android/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/io/rumors/reactnativesettings/RNSettingsModule$SettingReceiver.class differ
+diff --git a/node_modules/react-native-settings/android/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/io/rumors/reactnativesettings/RNSettingsModule.class b/node_modules/react-native-settings/android/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/io/rumors/reactnativesettings/RNSettingsModule.class
+new file mode 100644
+index 0000000..1e019aa
+Binary files /dev/null and b/node_modules/react-native-settings/android/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/io/rumors/reactnativesettings/RNSettingsModule.class differ
+diff --git a/node_modules/react-native-settings/android/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/io/rumors/reactnativesettings/RNSettingsPackage.class b/node_modules/react-native-settings/android/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/io/rumors/reactnativesettings/RNSettingsPackage.class
+new file mode 100644
+index 0000000..e4f205f
+Binary files /dev/null and b/node_modules/react-native-settings/android/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/io/rumors/reactnativesettings/RNSettingsPackage.class differ
+diff --git a/node_modules/react-native-settings/android/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/io/rumors/reactnativesettings/handlers/AirplaneModeSettingsHandler.class b/node_modules/react-native-settings/android/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/io/rumors/reactnativesettings/handlers/AirplaneModeSettingsHandler.class
+new file mode 100644
+index 0000000..9c95ef5
+Binary files /dev/null and b/node_modules/react-native-settings/android/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/io/rumors/reactnativesettings/handlers/AirplaneModeSettingsHandler.class differ
+diff --git a/node_modules/react-native-settings/android/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/io/rumors/reactnativesettings/handlers/CaptioningSettingsHandler.class b/node_modules/react-native-settings/android/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/io/rumors/reactnativesettings/handlers/CaptioningSettingsHandler.class
+new file mode 100644
+index 0000000..ce31a5e
+Binary files /dev/null and b/node_modules/react-native-settings/android/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/io/rumors/reactnativesettings/handlers/CaptioningSettingsHandler.class differ
+diff --git a/node_modules/react-native-settings/android/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/io/rumors/reactnativesettings/handlers/LocationSettingsHandler.class b/node_modules/react-native-settings/android/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/io/rumors/reactnativesettings/handlers/LocationSettingsHandler.class
+new file mode 100644
+index 0000000..af3f572
+Binary files /dev/null and b/node_modules/react-native-settings/android/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/io/rumors/reactnativesettings/handlers/LocationSettingsHandler.class differ
+diff --git a/node_modules/react-native-settings/android/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/io/rumors/reactnativesettings/handlers/SettingsHandler.class b/node_modules/react-native-settings/android/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/io/rumors/reactnativesettings/handlers/SettingsHandler.class
+new file mode 100644
+index 0000000..cc4c9bb
+Binary files /dev/null and b/node_modules/react-native-settings/android/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/io/rumors/reactnativesettings/handlers/SettingsHandler.class differ
+diff --git a/node_modules/react-native-settings/android/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/io/rumors/reactnativesettings/listeners/CaptioningChangeListener$1.class b/node_modules/react-native-settings/android/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/io/rumors/reactnativesettings/listeners/CaptioningChangeListener$1.class
+new file mode 100644
+index 0000000..36f805e
+Binary files /dev/null and b/node_modules/react-native-settings/android/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/io/rumors/reactnativesettings/listeners/CaptioningChangeListener$1.class differ
+diff --git a/node_modules/react-native-settings/android/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/io/rumors/reactnativesettings/listeners/CaptioningChangeListener.class b/node_modules/react-native-settings/android/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/io/rumors/reactnativesettings/listeners/CaptioningChangeListener.class
+new file mode 100644
+index 0000000..fa668ca
+Binary files /dev/null and b/node_modules/react-native-settings/android/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/io/rumors/reactnativesettings/listeners/CaptioningChangeListener.class differ
+diff --git a/node_modules/react-native-settings/android/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/io/rumors/reactnativesettings/receivers/AirplaneModeReceiver.class b/node_modules/react-native-settings/android/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/io/rumors/reactnativesettings/receivers/AirplaneModeReceiver.class
+new file mode 100644
+index 0000000..c32f104
+Binary files /dev/null and b/node_modules/react-native-settings/android/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/io/rumors/reactnativesettings/receivers/AirplaneModeReceiver.class differ
+diff --git a/node_modules/react-native-settings/android/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/io/rumors/reactnativesettings/receivers/GpsLocationReceiver.class b/node_modules/react-native-settings/android/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/io/rumors/reactnativesettings/receivers/GpsLocationReceiver.class
+new file mode 100644
+index 0000000..b3b7266
+Binary files /dev/null and b/node_modules/react-native-settings/android/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/io/rumors/reactnativesettings/receivers/GpsLocationReceiver.class differ
+diff --git a/node_modules/react-native-settings/android/build/intermediates/local_only_symbol_list/debug/parseDebugLocalResources/R-def.txt b/node_modules/react-native-settings/android/build/intermediates/local_only_symbol_list/debug/parseDebugLocalResources/R-def.txt
+new file mode 100644
+index 0000000..78ac5b8
+--- /dev/null
++++ b/node_modules/react-native-settings/android/build/intermediates/local_only_symbol_list/debug/parseDebugLocalResources/R-def.txt
+@@ -0,0 +1,2 @@
++R_DEF: Internal format may change without notice
++local
+diff --git a/node_modules/react-native-settings/android/build/intermediates/manifest_merge_blame_file/debug/processDebugManifest/manifest-merger-blame-debug-report.txt b/node_modules/react-native-settings/android/build/intermediates/manifest_merge_blame_file/debug/processDebugManifest/manifest-merger-blame-debug-report.txt
+new file mode 100644
+index 0000000..f831d15
+--- /dev/null
++++ b/node_modules/react-native-settings/android/build/intermediates/manifest_merge_blame_file/debug/processDebugManifest/manifest-merger-blame-debug-report.txt
+@@ -0,0 +1,7 @@
++1<?xml version="1.0" encoding="utf-8"?>
++2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
++3    package="io.rumors.reactnativesettings" >
++4
++5    <uses-sdk android:minSdkVersion="16" />
++6
++7</manifest>
+diff --git a/node_modules/react-native-settings/android/build/intermediates/merged_java_res/debug/mergeDebugJavaResource/feature-react-native-settings.jar b/node_modules/react-native-settings/android/build/intermediates/merged_java_res/debug/mergeDebugJavaResource/feature-react-native-settings.jar
+new file mode 100644
+index 0000000..15cb0ec
+Binary files /dev/null and b/node_modules/react-native-settings/android/build/intermediates/merged_java_res/debug/mergeDebugJavaResource/feature-react-native-settings.jar differ
+diff --git a/node_modules/react-native-settings/android/build/intermediates/merged_manifest/debug/processDebugManifest/AndroidManifest.xml b/node_modules/react-native-settings/android/build/intermediates/merged_manifest/debug/processDebugManifest/AndroidManifest.xml
+new file mode 100644
+index 0000000..364e720
+--- /dev/null
++++ b/node_modules/react-native-settings/android/build/intermediates/merged_manifest/debug/processDebugManifest/AndroidManifest.xml
+@@ -0,0 +1,7 @@
++<?xml version="1.0" encoding="utf-8"?>
++<manifest xmlns:android="http://schemas.android.com/apk/res/android"
++    package="io.rumors.reactnativesettings" >
++
++    <uses-sdk android:minSdkVersion="16" />
++
++</manifest>
+\ No newline at end of file
+diff --git a/node_modules/react-native-settings/android/build/intermediates/navigation_json/debug/extractDeepLinksDebug/navigation.json b/node_modules/react-native-settings/android/build/intermediates/navigation_json/debug/extractDeepLinksDebug/navigation.json
+new file mode 100644
+index 0000000..0637a08
+--- /dev/null
++++ b/node_modules/react-native-settings/android/build/intermediates/navigation_json/debug/extractDeepLinksDebug/navigation.json
+@@ -0,0 +1 @@
++[]
+\ No newline at end of file
+diff --git a/node_modules/react-native-settings/android/build/intermediates/nested_resources_validation_report/debug/generateDebugResources/nestedResourcesValidationReport.txt b/node_modules/react-native-settings/android/build/intermediates/nested_resources_validation_report/debug/generateDebugResources/nestedResourcesValidationReport.txt
+new file mode 100644
+index 0000000..08f4ebe
+--- /dev/null
++++ b/node_modules/react-native-settings/android/build/intermediates/nested_resources_validation_report/debug/generateDebugResources/nestedResourcesValidationReport.txt
+@@ -0,0 +1 @@
++0 Warning/Error
+\ No newline at end of file
+diff --git a/node_modules/react-native-settings/android/build/intermediates/runtime_library_classes_dir/debug/bundleLibRuntimeToDirDebug/io/rumors/reactnativesettings/BuildConfig.class b/node_modules/react-native-settings/android/build/intermediates/runtime_library_classes_dir/debug/bundleLibRuntimeToDirDebug/io/rumors/reactnativesettings/BuildConfig.class
+new file mode 100644
+index 0000000..bedc9ed
+Binary files /dev/null and b/node_modules/react-native-settings/android/build/intermediates/runtime_library_classes_dir/debug/bundleLibRuntimeToDirDebug/io/rumors/reactnativesettings/BuildConfig.class differ
+diff --git a/node_modules/react-native-settings/android/build/intermediates/runtime_library_classes_dir/debug/bundleLibRuntimeToDirDebug/io/rumors/reactnativesettings/Constants.class b/node_modules/react-native-settings/android/build/intermediates/runtime_library_classes_dir/debug/bundleLibRuntimeToDirDebug/io/rumors/reactnativesettings/Constants.class
+new file mode 100644
+index 0000000..dd270e4
+Binary files /dev/null and b/node_modules/react-native-settings/android/build/intermediates/runtime_library_classes_dir/debug/bundleLibRuntimeToDirDebug/io/rumors/reactnativesettings/Constants.class differ
+diff --git a/node_modules/react-native-settings/android/build/intermediates/runtime_library_classes_dir/debug/bundleLibRuntimeToDirDebug/io/rumors/reactnativesettings/RNSettingsModule$1.class b/node_modules/react-native-settings/android/build/intermediates/runtime_library_classes_dir/debug/bundleLibRuntimeToDirDebug/io/rumors/reactnativesettings/RNSettingsModule$1.class
+new file mode 100644
+index 0000000..57c4184
+Binary files /dev/null and b/node_modules/react-native-settings/android/build/intermediates/runtime_library_classes_dir/debug/bundleLibRuntimeToDirDebug/io/rumors/reactnativesettings/RNSettingsModule$1.class differ
+diff --git a/node_modules/react-native-settings/android/build/intermediates/runtime_library_classes_dir/debug/bundleLibRuntimeToDirDebug/io/rumors/reactnativesettings/RNSettingsModule$SettingReceiver.class b/node_modules/react-native-settings/android/build/intermediates/runtime_library_classes_dir/debug/bundleLibRuntimeToDirDebug/io/rumors/reactnativesettings/RNSettingsModule$SettingReceiver.class
+new file mode 100644
+index 0000000..f7bdb48
+Binary files /dev/null and b/node_modules/react-native-settings/android/build/intermediates/runtime_library_classes_dir/debug/bundleLibRuntimeToDirDebug/io/rumors/reactnativesettings/RNSettingsModule$SettingReceiver.class differ
+diff --git a/node_modules/react-native-settings/android/build/intermediates/runtime_library_classes_dir/debug/bundleLibRuntimeToDirDebug/io/rumors/reactnativesettings/RNSettingsModule.class b/node_modules/react-native-settings/android/build/intermediates/runtime_library_classes_dir/debug/bundleLibRuntimeToDirDebug/io/rumors/reactnativesettings/RNSettingsModule.class
+new file mode 100644
+index 0000000..1e019aa
+Binary files /dev/null and b/node_modules/react-native-settings/android/build/intermediates/runtime_library_classes_dir/debug/bundleLibRuntimeToDirDebug/io/rumors/reactnativesettings/RNSettingsModule.class differ
+diff --git a/node_modules/react-native-settings/android/build/intermediates/runtime_library_classes_dir/debug/bundleLibRuntimeToDirDebug/io/rumors/reactnativesettings/RNSettingsPackage.class b/node_modules/react-native-settings/android/build/intermediates/runtime_library_classes_dir/debug/bundleLibRuntimeToDirDebug/io/rumors/reactnativesettings/RNSettingsPackage.class
+new file mode 100644
+index 0000000..e4f205f
+Binary files /dev/null and b/node_modules/react-native-settings/android/build/intermediates/runtime_library_classes_dir/debug/bundleLibRuntimeToDirDebug/io/rumors/reactnativesettings/RNSettingsPackage.class differ
+diff --git a/node_modules/react-native-settings/android/build/intermediates/runtime_library_classes_dir/debug/bundleLibRuntimeToDirDebug/io/rumors/reactnativesettings/handlers/AirplaneModeSettingsHandler.class b/node_modules/react-native-settings/android/build/intermediates/runtime_library_classes_dir/debug/bundleLibRuntimeToDirDebug/io/rumors/reactnativesettings/handlers/AirplaneModeSettingsHandler.class
+new file mode 100644
+index 0000000..9c95ef5
+Binary files /dev/null and b/node_modules/react-native-settings/android/build/intermediates/runtime_library_classes_dir/debug/bundleLibRuntimeToDirDebug/io/rumors/reactnativesettings/handlers/AirplaneModeSettingsHandler.class differ
+diff --git a/node_modules/react-native-settings/android/build/intermediates/runtime_library_classes_dir/debug/bundleLibRuntimeToDirDebug/io/rumors/reactnativesettings/handlers/CaptioningSettingsHandler.class b/node_modules/react-native-settings/android/build/intermediates/runtime_library_classes_dir/debug/bundleLibRuntimeToDirDebug/io/rumors/reactnativesettings/handlers/CaptioningSettingsHandler.class
+new file mode 100644
+index 0000000..ce31a5e
+Binary files /dev/null and b/node_modules/react-native-settings/android/build/intermediates/runtime_library_classes_dir/debug/bundleLibRuntimeToDirDebug/io/rumors/reactnativesettings/handlers/CaptioningSettingsHandler.class differ
+diff --git a/node_modules/react-native-settings/android/build/intermediates/runtime_library_classes_dir/debug/bundleLibRuntimeToDirDebug/io/rumors/reactnativesettings/handlers/LocationSettingsHandler.class b/node_modules/react-native-settings/android/build/intermediates/runtime_library_classes_dir/debug/bundleLibRuntimeToDirDebug/io/rumors/reactnativesettings/handlers/LocationSettingsHandler.class
+new file mode 100644
+index 0000000..af3f572
+Binary files /dev/null and b/node_modules/react-native-settings/android/build/intermediates/runtime_library_classes_dir/debug/bundleLibRuntimeToDirDebug/io/rumors/reactnativesettings/handlers/LocationSettingsHandler.class differ
+diff --git a/node_modules/react-native-settings/android/build/intermediates/runtime_library_classes_dir/debug/bundleLibRuntimeToDirDebug/io/rumors/reactnativesettings/handlers/SettingsHandler.class b/node_modules/react-native-settings/android/build/intermediates/runtime_library_classes_dir/debug/bundleLibRuntimeToDirDebug/io/rumors/reactnativesettings/handlers/SettingsHandler.class
+new file mode 100644
+index 0000000..cc4c9bb
+Binary files /dev/null and b/node_modules/react-native-settings/android/build/intermediates/runtime_library_classes_dir/debug/bundleLibRuntimeToDirDebug/io/rumors/reactnativesettings/handlers/SettingsHandler.class differ
+diff --git a/node_modules/react-native-settings/android/build/intermediates/runtime_library_classes_dir/debug/bundleLibRuntimeToDirDebug/io/rumors/reactnativesettings/listeners/CaptioningChangeListener$1.class b/node_modules/react-native-settings/android/build/intermediates/runtime_library_classes_dir/debug/bundleLibRuntimeToDirDebug/io/rumors/reactnativesettings/listeners/CaptioningChangeListener$1.class
+new file mode 100644
+index 0000000..36f805e
+Binary files /dev/null and b/node_modules/react-native-settings/android/build/intermediates/runtime_library_classes_dir/debug/bundleLibRuntimeToDirDebug/io/rumors/reactnativesettings/listeners/CaptioningChangeListener$1.class differ
+diff --git a/node_modules/react-native-settings/android/build/intermediates/runtime_library_classes_dir/debug/bundleLibRuntimeToDirDebug/io/rumors/reactnativesettings/listeners/CaptioningChangeListener.class b/node_modules/react-native-settings/android/build/intermediates/runtime_library_classes_dir/debug/bundleLibRuntimeToDirDebug/io/rumors/reactnativesettings/listeners/CaptioningChangeListener.class
+new file mode 100644
+index 0000000..fa668ca
+Binary files /dev/null and b/node_modules/react-native-settings/android/build/intermediates/runtime_library_classes_dir/debug/bundleLibRuntimeToDirDebug/io/rumors/reactnativesettings/listeners/CaptioningChangeListener.class differ
+diff --git a/node_modules/react-native-settings/android/build/intermediates/runtime_library_classes_dir/debug/bundleLibRuntimeToDirDebug/io/rumors/reactnativesettings/receivers/AirplaneModeReceiver.class b/node_modules/react-native-settings/android/build/intermediates/runtime_library_classes_dir/debug/bundleLibRuntimeToDirDebug/io/rumors/reactnativesettings/receivers/AirplaneModeReceiver.class
+new file mode 100644
+index 0000000..c32f104
+Binary files /dev/null and b/node_modules/react-native-settings/android/build/intermediates/runtime_library_classes_dir/debug/bundleLibRuntimeToDirDebug/io/rumors/reactnativesettings/receivers/AirplaneModeReceiver.class differ
+diff --git a/node_modules/react-native-settings/android/build/intermediates/runtime_library_classes_dir/debug/bundleLibRuntimeToDirDebug/io/rumors/reactnativesettings/receivers/GpsLocationReceiver.class b/node_modules/react-native-settings/android/build/intermediates/runtime_library_classes_dir/debug/bundleLibRuntimeToDirDebug/io/rumors/reactnativesettings/receivers/GpsLocationReceiver.class
+new file mode 100644
+index 0000000..b3b7266
+Binary files /dev/null and b/node_modules/react-native-settings/android/build/intermediates/runtime_library_classes_dir/debug/bundleLibRuntimeToDirDebug/io/rumors/reactnativesettings/receivers/GpsLocationReceiver.class differ
+diff --git a/node_modules/react-native-settings/android/build/intermediates/runtime_library_classes_jar/debug/bundleLibRuntimeToJarDebug/classes.jar b/node_modules/react-native-settings/android/build/intermediates/runtime_library_classes_jar/debug/bundleLibRuntimeToJarDebug/classes.jar
+new file mode 100644
+index 0000000..eb0a63c
+Binary files /dev/null and b/node_modules/react-native-settings/android/build/intermediates/runtime_library_classes_jar/debug/bundleLibRuntimeToJarDebug/classes.jar differ
+diff --git a/node_modules/react-native-settings/android/build/intermediates/symbol_list_with_package_name/debug/generateDebugRFile/package-aware-r.txt b/node_modules/react-native-settings/android/build/intermediates/symbol_list_with_package_name/debug/generateDebugRFile/package-aware-r.txt
+new file mode 100644
+index 0000000..b4bedcc
+--- /dev/null
++++ b/node_modules/react-native-settings/android/build/intermediates/symbol_list_with_package_name/debug/generateDebugRFile/package-aware-r.txt
+@@ -0,0 +1 @@
++io.rumors.reactnativesettings
+diff --git a/node_modules/react-native-settings/android/build/outputs/aar/react-native-settings-debug.aar b/node_modules/react-native-settings/android/build/outputs/aar/react-native-settings-debug.aar
+new file mode 100644
+index 0000000..4b21747
+Binary files /dev/null and b/node_modules/react-native-settings/android/build/outputs/aar/react-native-settings-debug.aar differ
+diff --git a/node_modules/react-native-settings/android/build/outputs/logs/manifest-merger-debug-report.txt b/node_modules/react-native-settings/android/build/outputs/logs/manifest-merger-debug-report.txt
+new file mode 100644
+index 0000000..7607531
+--- /dev/null
++++ b/node_modules/react-native-settings/android/build/outputs/logs/manifest-merger-debug-report.txt
+@@ -0,0 +1,17 @@
++-- Merging decision tree log ---
++manifest
++ADDED from /Users/claudiomontagnoli/Documents/Projects/mr-apps/appdaloja-expo/node_modules/react-native-settings/android/src/main/AndroidManifest.xml:2:1-5:12
++INJECTED from /Users/claudiomontagnoli/Documents/Projects/mr-apps/appdaloja-expo/node_modules/react-native-settings/android/src/main/AndroidManifest.xml:2:1-5:12
++	package
++		ADDED from /Users/claudiomontagnoli/Documents/Projects/mr-apps/appdaloja-expo/node_modules/react-native-settings/android/src/main/AndroidManifest.xml:3:11-50
++		INJECTED from /Users/claudiomontagnoli/Documents/Projects/mr-apps/appdaloja-expo/node_modules/react-native-settings/android/src/main/AndroidManifest.xml
++	xmlns:android
++		ADDED from /Users/claudiomontagnoli/Documents/Projects/mr-apps/appdaloja-expo/node_modules/react-native-settings/android/src/main/AndroidManifest.xml:2:11-69
++uses-sdk
++INJECTED from /Users/claudiomontagnoli/Documents/Projects/mr-apps/appdaloja-expo/node_modules/react-native-settings/android/src/main/AndroidManifest.xml reason: use-sdk injection requested
++INJECTED from /Users/claudiomontagnoli/Documents/Projects/mr-apps/appdaloja-expo/node_modules/react-native-settings/android/src/main/AndroidManifest.xml
++INJECTED from /Users/claudiomontagnoli/Documents/Projects/mr-apps/appdaloja-expo/node_modules/react-native-settings/android/src/main/AndroidManifest.xml
++	android:targetSdkVersion
++		INJECTED from /Users/claudiomontagnoli/Documents/Projects/mr-apps/appdaloja-expo/node_modules/react-native-settings/android/src/main/AndroidManifest.xml
++	android:minSdkVersion
++		INJECTED from /Users/claudiomontagnoli/Documents/Projects/mr-apps/appdaloja-expo/node_modules/react-native-settings/android/src/main/AndroidManifest.xml
+diff --git a/node_modules/react-native-settings/android/build/tmp/compileDebugJavaWithJavac/previous-compilation-data.bin b/node_modules/react-native-settings/android/build/tmp/compileDebugJavaWithJavac/previous-compilation-data.bin
+new file mode 100644
+index 0000000..2bfa6c0
+Binary files /dev/null and b/node_modules/react-native-settings/android/build/tmp/compileDebugJavaWithJavac/previous-compilation-data.bin differ
+diff --git a/node_modules/react-native-settings/android/src/main/java/io/rumors/reactnativesettings/RNSettingsModule.java b/node_modules/react-native-settings/android/src/main/java/io/rumors/reactnativesettings/RNSettingsModule.java
+index b0f44c5..7d45be6 100644
+--- a/node_modules/react-native-settings/android/src/main/java/io/rumors/reactnativesettings/RNSettingsModule.java
++++ b/node_modules/react-native-settings/android/src/main/java/io/rumors/reactnativesettings/RNSettingsModule.java
+@@ -91,7 +91,11 @@ public class RNSettingsModule extends ReactContextBaseJavaModule {
+ 
+   private void registerReceiver(Context reactContext, String filter, BroadcastReceiver receiver) {
+     IntentFilter intentFilter = new IntentFilter(filter);
+-    reactContext.registerReceiver(receiver, intentFilter);
++    if (android.os.Build.VERSION.SDK_INT >= android.os.Build.VERSION_CODES.TIRAMISU) {
++      reactContext.registerReceiver(receiver, intentFilter, android.content.Context.RECEIVER_NOT_EXPORTED);
++    } else {
++      reactContext.registerReceiver(receiver, intentFilter);
++    }
+   }
+ 
+   private void initReceivers() {
+diff --git a/node_modules/react-native-settings/android/src/main/java/io/rumors/reactnativesettings/RNSettingsModule.java.patch b/node_modules/react-native-settings/android/src/main/java/io/rumors/reactnativesettings/RNSettingsModule.java.patch
+new file mode 100644
+index 0000000..dac4de1
+--- /dev/null
++++ b/node_modules/react-native-settings/android/src/main/java/io/rumors/reactnativesettings/RNSettingsModule.java.patch
+@@ -0,0 +1,16 @@
++--- a/android/src/main/java/io/rumors/reactnativesettings/RNSettingsModule.java
+++++ b/android/src/main/java/io/rumors/reactnativesettings/RNSettingsModule.java
++@@ -89,7 +89,11 @@ public class RNSettingsModule extends ReactContextBaseJavaModule {
++   }
++ 
++   private void registerReceiver(Context reactContext, String filter, BroadcastReceiver receiver) {
++     IntentFilter intentFilter = new IntentFilter(filter);
++-    reactContext.registerReceiver(receiver, intentFilter);
+++    if (android.os.Build.VERSION.SDK_INT >= android.os.Build.VERSION_CODES.TIRAMISU) {
+++      reactContext.registerReceiver(receiver, intentFilter, android.content.Context.RECEIVER_NOT_EXPORTED);
+++    } else {
+++      reactContext.registerReceiver(receiver, intentFilter);
+++    }
++   }
++ 
++   private void initReceivers() {

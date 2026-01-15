@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "930964848367",
+    "project_id": "dd6b59960ddbdc8dc61d",
+    "storage_bucket": "dd6b59960ddbdc8dc61d.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:930964848367:android:39c090fca36027b777e51a",
+        "android_client_info": {
+          "package_name": "com.appdaloja.android"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA5iJyreww-JurBYy3_qyeHHp--ZElw9bs"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

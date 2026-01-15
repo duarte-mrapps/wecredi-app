@@ -1,0 +1,117 @@
+{
+  "expo": {
+    "name": "appdaloja",
+    "slug": "appdaloja",
+    "scheme": "appdaloja",
+    "version": "1.26.001",
+    "orientation": "portrait",
+    "icon": "./assets/images/icon.png",
+    "userInterfaceStyle": "automatic",
+    "newArchEnabled": true,
+    "ios": {
+      "CFBundleDisplayName": "{{APP_NAME}}",
+      "appStoreCategory": "Business",
+      "supportsTablet": true,
+      "googleServicesFile": "./GoogleService-Info.plist",
+      "bundleIdentifier": "{{BUNDLE_ID}}",
+      "infoPlist": {
+        "NSLocationWhenInUseUsageDescription": "Este aplicativo precisa de acesso à localização para mostrar veículos próximos a você.",
+        "NSLocationAlwaysUsageDescription": "Este aplicativo precisa de acesso à localização para mostrar veículos próximos a você.",
+        "NSCameraUsageDescription": "Este aplicativo precisa de acesso à câmera para tirar fotos.",
+        "NSPhotoLibraryUsageDescription": "Este aplicativo precisa de acesso à galeria de fotos para selecionar imagens.",
+        "LSApplicationQueriesSchemes": [
+          "whatsapp",
+          "tg",
+          "sms",
+          "tel",
+          "mailto",
+          "geo",
+          "waze",
+          "comgooglemaps",
+          "maps",
+          "instagram",
+          "facebook",
+          "youtube",
+          "twitter",
+          "linkedin",
+          "tiktok"
+        ]
+      }
+    },
+    "android": {
+      "adaptiveIcon": {
+        "backgroundColor": "{{COLOR}}",
+        "foregroundImage": "./assets/images/icon.png"
+      },
+      "versionName": "1.26.001",
+      "versionCode": 126001,
+      "edgeToEdgeEnabled": true,
+      "predictiveBackGestureEnabled": false,
+      "googleServicesFile": "./google-services.json",
+      "package": "{{APPLICATION_ID}}",
+      "permissions": [
+        "ACCESS_FINE_LOCATION",
+        "ACCESS_COARSE_LOCATION",
+        "CAMERA",
+        "READ_EXTERNAL_STORAGE",
+        "WRITE_EXTERNAL_STORAGE",
+        "POST_NOTIFICATIONS",
+        "VIBRATE"
+      ]
+    },
+    "plugins": [
+      [
+        "expo-splash-screen",
+        {
+          "image": "./assets/images/icon.png",
+          "imageWidth": 200,
+          "resizeMode": "contain",
+          "backgroundColor": "{{COLOR}}",
+          "dark": {
+            "backgroundColor": "{{COLOR}}"
+          },
+          "ios": {
+            "backgroundColor": "{{COLOR}}"
+          }
+        }
+      ],
+      [
+        "expo-location",
+        {
+          "locationAlwaysAndWhenInUsePermission": "Este aplicativo precisa de acesso à localização para mostrar veículos próximos a você."
+        }
+      ],
+      [
+        "expo-notifications",
+        {
+          "icon": "./assets/images/icon.png",
+          "color": "{{COLOR}}"
+        }
+      ],
+      "@react-native-firebase/app",
+      [
+        "expo-build-properties",
+        {
+          "ios": {
+            "useFrameworks": "static"
+          },
+          "android": {
+            "strings": {
+              "app_name": "{{APP_NAME}}"
+            }
+          }
+        }
+      ],
+      [
+        "onesignal-expo-plugin",
+        {
+          "mode": "production"
+        }
+      ],
+      "./plugins/fix-onesignal-bundle-id.js",
+      "./plugins/fix-detox-test.js",
+      "./plugins/set-app-display-name.js",
+      "./plugins/withAndroidQueries"
+    ]
+  }
+}

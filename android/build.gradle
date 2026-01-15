@@ -1,0 +1,43 @@
+// Top-level build file where you can add configuration options common to all sub-projects/modules.
+
+buildscript {
+    ext {
+        kotlinVersion = '2.1.21'
+    }
+
+  repositories {
+    google()
+    mavenCentral()
+  }
+  dependencies {
+    classpath 'com.google.gms:google-services:4.4.4'
+    classpath('com.android.tools.build:gradle')
+    classpath('com.facebook.react:react-native-gradle-plugin')
+    classpath('org.jetbrains.kotlin:kotlin-gradle-plugin')
+    classpath 'com.google.gms:google-services:4.4.4'
+    classpath("org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlinVersion")
+  }
+}
+
+allprojects {
+  repositories {
+    google()
+    maven {
+       url("$rootDir/../node_modules/detox/Detox-android")
+    }
+
+    mavenCentral()
+    // maven { url 'https://www.jitpack.io' }
+    // Notifee local libs repository (required for core AAR)
+    // Using relative path from project root
+    def notifeeDir = new File(rootDir, "../node_modules/@notifee/react-native")
+    if (notifeeDir.exists()) {
+      maven {
+        url "$notifeeDir/android/libs"
+      }
+    }
+  }
+}
+
+apply plugin: "expo-root-project"
+apply plugin: "com.facebook.react.rootproject"
