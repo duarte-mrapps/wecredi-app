@@ -38,6 +38,8 @@ PODS:
     - ExpoModulesCore
   - ExpoFont (14.0.9):
     - ExpoModulesCore
+  - ExpoGlassEffect (0.1.8):
+    - ExpoModulesCore
   - ExpoHaptics (15.0.7):
     - ExpoModulesCore
   - ExpoHead (6.0.15):
@@ -1999,7 +2001,7 @@ PODS:
     - ReactNativeDependencies
     - RNWorklets
     - Yoga
-  - RNScreens (4.19.0):
+  - RNScreens (4.20.0):
     - hermes-engine
     - RCTRequired
     - RCTTypeSafety
@@ -2021,9 +2023,9 @@ PODS:
     - ReactCommon/turbomodule/bridging
     - ReactCommon/turbomodule/core
     - ReactNativeDependencies
-    - RNScreens/common (= 4.19.0)
+    - RNScreens/common (= 4.20.0)
     - Yoga
-  - RNScreens/common (4.19.0):
+  - RNScreens/common (4.20.0):
     - hermes-engine
     - RCTRequired
     - RCTTypeSafety
@@ -2162,6 +2164,7 @@ DEPENDENCIES:
   - ExpoDevice (from `../node_modules/expo-device/ios`)
   - ExpoFileSystem (from `../node_modules/expo-file-system/ios`)
   - ExpoFont (from `../node_modules/expo-font/ios`)
+  - ExpoGlassEffect (from `../node_modules/expo-glass-effect/ios`)
   - ExpoHaptics (from `../node_modules/expo-haptics/ios`)
   - ExpoHead (from `../node_modules/expo-router/ios`)
   - ExpoImage (from `../node_modules/expo-image/ios`)
@@ -2282,6 +2285,8 @@ EXTERNAL SOURCES:
     :path: "../node_modules/expo-file-system/ios"
   ExpoFont:
     :path: "../node_modules/expo-font/ios"
+  ExpoGlassEffect:
+    :path: "../node_modules/expo-glass-effect/ios"
   ExpoHaptics:
     :path: "../node_modules/expo-haptics/ios"
   ExpoHead:
@@ -2473,6 +2478,7 @@ SPEC CHECKSUMS:
   ExpoDevice: d85d332b903b658a596f166b01fee12ca1e443ff
   ExpoFileSystem: 73a9f3f2e0affc61eba5b9326153f64870438af1
   ExpoFont: b881d43057dceb7b31ff767b24f612609e80f60f
+  ExpoGlassEffect: 387b1124a00166283d9c762c4dc895e84fdb60e8
   ExpoHaptics: b48d913e7e5f23816c6f130e525c9a6501b160b5
   ExpoHead: 16bab3395d4328e88e4282a4f6ef4f44b1225c8d
   ExpoImage: 6eb842cd07817402640545c41884dd7f5fbfbca5
@@ -2562,7 +2568,7 @@ SPEC CHECKSUMS:
   RNGestureHandler: 6a488ce85c88e82d8610db1108daf04e9b2d5162
   RNReactNativeHapticFeedback: a7cbcb0a72cf62c97b51d36fc1e14bf2f3dd5106
   RNReanimated: 00771d2ba7c810124852092eb29c0d1edf50cc58
-  RNScreens: 08ec2d3a35cbeeb9ddd063e5aa8fb6da5bf3a978
+  RNScreens: dea74a9106daf3cbed39de1f5ce7ff4f96c5c722
   RNVectorIcons: af977c18ed27deba54ed038b439fca2911a08cfc
   RNWorklets: 28ee7370ca8da356fcc914e3e68b97e9752196d2
   SDWebImage: d0184764be51240d49c761c37f53dd017e1ccaaf
