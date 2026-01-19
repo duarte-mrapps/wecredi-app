@@ -34,7 +34,7 @@ const moveAndRewriteDetoxTest = (projectRoot, packageName) => {
   const targetDir = path.join(testJavaRoot, ...packageName.split('.'))
   ensureDir(targetDir)
 
-  const existing = findDetoxTest(testJavaRoot) || path.join(testJavaRoot, 'com', 'appdaloja', 'DetoxTest.java')
+  const existing = findDetoxTest(testJavaRoot) || path.join(testJavaRoot, 'com', 'wecredi', 'DetoxTest.java')
   if (!fs.existsSync(existing)) return
 
   const rewritten = applyRewrites(existing, packageName)

@@ -1,19 +1,18 @@
 {
   "expo": {
-    "name": "appdaloja",
-    "slug": "appdaloja",
-    "scheme": "appdaloja",
-    "version": "1.26.001",
+    "name": "WeCredi",
+    "slug": "wecredi",
+    "scheme": "wecredi",
+    "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/images/icon.png",
     "userInterfaceStyle": "automatic",
     "newArchEnabled": true,
     "ios": {
-      "CFBundleDisplayName": "{{APP_NAME}}",
+      "CFBundleDisplayName": "WeCredi",
       "appStoreCategory": "Business",
       "supportsTablet": true,
-      "googleServicesFile": "./GoogleService-Info.plist",
-      "bundleIdentifier": "{{BUNDLE_ID}}",
+      "bundleIdentifier": "com.wecredi",
       "infoPlist": {
         "NSLocationWhenInUseUsageDescription": "Este aplicativo precisa de acesso à localização para mostrar veículos próximos a você.",
         "NSLocationAlwaysUsageDescription": "Este aplicativo precisa de acesso à localização para mostrar veículos próximos a você.",
@@ -40,15 +39,14 @@
     },
     "android": {
       "adaptiveIcon": {
-        "backgroundColor": "{{COLOR}}",
+        "backgroundColor": "#fff",
         "foregroundImage": "./assets/images/icon.png"
       },
-      "versionName": "1.26.001",
-      "versionCode": 126001,
+      "versionName": "1.0.0",
+      "versionCode": 1,
       "edgeToEdgeEnabled": true,
       "predictiveBackGestureEnabled": false,
-      "googleServicesFile": "./google-services.json",
-      "package": "{{APPLICATION_ID}}",
+      "package": "com.wecredi",
       "permissions": [
         "ACCESS_FINE_LOCATION",
         "ACCESS_COARSE_LOCATION",
@@ -66,12 +64,12 @@
           "image": "./assets/images/icon.png",
           "imageWidth": 200,
           "resizeMode": "contain",
-          "backgroundColor": "{{COLOR}}",
+          "backgroundColor": "#fff",
           "dark": {
-            "backgroundColor": "{{COLOR}}"
+            "backgroundColor": "#fff"
           },
           "ios": {
-            "backgroundColor": "{{COLOR}}"
+            "backgroundColor": "#fff"
           }
         }
       ],
@@ -85,10 +83,9 @@
         "expo-notifications",
         {
           "icon": "./assets/images/icon.png",
-          "color": "{{COLOR}}"
+          "color": "#fff"
         }
       ],
-      "@react-native-firebase/app",
       [
         "expo-build-properties",
         {
@@ -97,18 +94,14 @@
           },
           "android": {
             "strings": {
-              "app_name": "{{APP_NAME}}"
+              "app_name": "WeCredi"
             }
           }
         }
       ],
       [
-        "onesignal-expo-plugin",
-        {
-          "mode": "production"
-        }
+        "react-native-bottom-tabs"
       ],
-      "./plugins/fix-onesignal-bundle-id.js",
       "./plugins/fix-detox-test.js",
       "./plugins/set-app-display-name.js",
       "./plugins/withAndroidQueries"

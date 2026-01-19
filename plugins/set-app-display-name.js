@@ -1,7 +1,7 @@
 const { withInfoPlist, withStringsXml, AndroidConfig } = require('@expo/config-plugins')
 
 module.exports = function withAppDisplayName(config) {
-  const displayName = '{{APP_NAME}}'
+  const displayName = 'WeCredi'
 
   config = withInfoPlist(config, config => {
     const plist = config.modResults
