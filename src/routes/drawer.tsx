@@ -2,7 +2,7 @@ import { createDrawerNavigator, DrawerContentScrollView, DrawerItemList } from '
 import { DescriptionFontSize, Item, List, MediumFontSize, TitleFontSize, useColors } from 'react-native-ui-devkit';
 import { GlassView } from 'expo-glass-effect';
 import { HomeStack, AccountStack, SettingsStack, SearchStack } from './stacks';
-import { Alert, Image, Text, View } from 'react-native';
+import { Alert, Image, Text, useColorScheme, View } from 'react-native';
 
 import userPlaceHolder from '../assets/user-placeholder.png';
 
@@ -10,6 +10,7 @@ const Drawer = createDrawerNavigator();
 
 const CustomDrawerContent = (props: any) => {
   const colors = useColors();
+  const isDark = useColorScheme() === 'dark';
 
   const getActiveRouteName = () => {
     const route = props.state.routes[props.state.index];
@@ -20,7 +21,7 @@ const CustomDrawerContent = (props: any) => {
 
   const isActive = (routeName: string) => activeRoute === routeName;
 
-  const activeBackgroundColor = '#E0E0E0';
+  const activeBackgroundColor = isDark ? '#2C2C2C' : '#E0E0E0';
 
   return (
     <DrawerContentScrollView
@@ -28,7 +29,7 @@ const CustomDrawerContent = (props: any) => {
       contentContainerStyle={{ flexGrow: 1, }}
       bounces={false}
     >
-      <GlassView style={{ flex: 1, borderRadius: 20 }} >
+      <GlassView style={{ flex: 1, borderRadius: 20 }} glassEffectStyle='regular' >
         <View style={{ flexGrow: 1 }}>
 
           <View style={{ flexDirection: 'row', alignItems: 'center', padding: 16, gap: 16 }}>
@@ -38,22 +39,22 @@ const CustomDrawerContent = (props: any) => {
             />
             <View style={{ flex: 1, gap: 4 }}>
               <Text style={[TitleFontSize(1.2), { color: colors.text, fontWeight: 'bold' }]}>
-                Conta Wecredi
+                Conta WeCredi
               </Text>
-              <Text style={[DescriptionFontSize(1), { color: colors.text }]}>
+              <Text style={[DescriptionFontSize(1.2), { color: colors.text, fontWeight: '400' }]}>
                 Inicie à sessão para acessar seus dados do iCloud, a App Store, serviços da Apple e mais
               </Text>
             </View>
           </View>
 
-          <Item
-            data={{
+          <List
+            data={[{
               title: 'Início',
               icon: { type: 'sfsymbol', name: 'gear', color: '#fff', size: 18 },
               color: isActive('Home') ? { title: colors.primary } : undefined,
               onPress: () => props.navigation.navigate('Home'),
-            }}
-            style={isActive('Home') ? { backgroundColor: activeBackgroundColor } : undefined}
+              style: isActive('Home') ? { backgroundColor: activeBackgroundColor } : undefined
+            }]}
           />
 
           <List
