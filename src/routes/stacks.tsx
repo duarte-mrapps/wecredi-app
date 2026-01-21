@@ -14,7 +14,7 @@ export const HomeStack = () => {
         name="Home"
         component={Home}
         options={{
-          title: 'Home',
+          title: 'Visão Geral',
           headerLargeTitle: true,
         }}
       />
@@ -29,7 +29,7 @@ export const AccountStack = () => {
         name="Account"
         component={Account}
         options={{
-          title: 'Conta',
+          title: 'Operações',
           headerLargeTitle: true,
         }}
       />
@@ -44,7 +44,7 @@ export const SettingsStack = () => {
         name="Settings"
         component={Settings}
         options={{
-          title: 'Configurações',
+          title: 'Minha Área',
           headerLargeTitle: true,
         }}
       />

@@ -1,7 +1,6 @@
-import React, { useLayoutEffect } from "react";
-import { Alert, Platform, Pressable, ScrollView, Text, View } from "react-native";
+import { useLayoutEffect } from "react";
+import { ScrollView, Text, View } from "react-native";
 import { useNavigation } from "@react-navigation/native";
-import { Icon } from "react-native-ui-devkit";
 import { NativeStackNavigationProp } from "@react-navigation/native-stack";
 
 const Home = () => {
@@ -10,34 +9,27 @@ const Home = () => {
 
   useLayoutEffect(() => {
     navigation.setOptions({
-      headerSearchBarOptions: {
-        placeholder: 'Search',
-      },
-      unstable_headerRightItems: ({ tintColor }) => [
+      unstable_headerRightItems: () => [
         {
+          sharesBackground: false,
           type: 'button',
-          label: 'Edit',
-          tintColor,
-          onPress: () => {
-            // Do something
-          },
+          label: 'Heart',
+          icon: { type: 'sfSymbol', name: 'creditcard' },
+          variant: 'plain',
+          onPress: () => { },
         },
         {
           type: 'spacing',
-          spacing: 10,
+          spacing: 1,
         },
         {
+          sharesBackground: false,
           type: 'button',
           label: 'Heart',
-          icon: {
-            type: 'sfSymbol',
-            name: 'heart',
-          },
-          tintColor,
-          variant: 'prominent',
-          onPress: () => {
-            // Do something
-          },
+          icon: { type: 'sfSymbol', name: 'plus' },
+          variant: 'plain',
+
+          onPress: () => { },
         },
       ],
 
@@ -48,9 +40,46 @@ const Home = () => {
     <ScrollView
       contentInsetAdjustmentBehavior="automatic"
     >
-      <View style={{ flex: 1, justifyContent: 'center', alignItems: 'center' }}>
-        <Text>Settings</Text>
+      <View style={{ flex: 1, justifyContent: 'center', alignItems: 'center', }}>
+        <Text>Acompanhe seus financiamentos e pagamentos</Text>
       </View>
+
+      <View
+        style={{
+          backgroundColor: '#FF383C',
+          height: 200,
+          margin: 20,
+          borderRadius: 10,
+        }}
+      />
+
+      <View
+        style={{
+          backgroundColor: '#FF8D28',
+          height: 200,
+          margin: 20,
+          borderRadius: 10,
+        }}
+      />
+
+      <View
+        style={{
+          backgroundColor: '#FFCC01',
+          height: 200,
+          margin: 20,
+          borderRadius: 10,
+        }}
+      />
+
+      <View
+        style={{
+          backgroundColor: '#34C759',
+          height: 200,
+          margin: 20,
+          borderRadius: 10,
+        }}
+      />
+
     </ScrollView>
   )
 }

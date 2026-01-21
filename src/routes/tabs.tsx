@@ -32,21 +32,24 @@ export const Tabs = () => {
         name="Home"
         component={HomeStack}
         options={{
-          tabBarIcon: () => Platform.OS === 'ios' ? { sfSymbol: 'book' } : icons?.book,
+          title: 'Visão Geral',
+          tabBarIcon: () => Platform.OS === 'ios' ? { sfSymbol: 'house' } : icons?.book,
         }}
       />
       <Tab.Screen
         name="Account"
         component={AccountStack}
         options={{
-          tabBarIcon: () => Platform.OS === 'ios' ? { sfSymbol: 'person' } : icons?.person,
+          title: 'Operações',
+          tabBarIcon: () => Platform.OS === 'ios' ? { sfSymbol: 'text.document' } : icons?.person,
         }}
       />
       <Tab.Screen
         name="Settings"
         component={SettingsStack}
         options={{
-          tabBarIcon: () => Platform.OS === 'ios' ? { sfSymbol: 'gear' } : icons?.settings,
+          title: 'Minha Área',
+          tabBarIcon: () => Platform.OS === 'ios' ? { sfSymbol: 'person' } : icons?.settings,
         }}
       />
       <Tab.Screen
