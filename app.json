@@ -12,30 +12,7 @@
       "CFBundleDisplayName": "WeCredi",
       "appStoreCategory": "Business",
       "supportsTablet": true,
-      "bundleIdentifier": "com.wecredi",
-      "infoPlist": {
-        "NSLocationWhenInUseUsageDescription": "Este aplicativo precisa de acesso à localização para mostrar veículos próximos a você.",
-        "NSLocationAlwaysUsageDescription": "Este aplicativo precisa de acesso à localização para mostrar veículos próximos a você.",
-        "NSCameraUsageDescription": "Este aplicativo precisa de acesso à câmera para tirar fotos.",
-        "NSPhotoLibraryUsageDescription": "Este aplicativo precisa de acesso à galeria de fotos para selecionar imagens.",
-        "LSApplicationQueriesSchemes": [
-          "whatsapp",
-          "tg",
-          "sms",
-          "tel",
-          "mailto",
-          "geo",
-          "waze",
-          "comgooglemaps",
-          "maps",
-          "instagram",
-          "facebook",
-          "youtube",
-          "twitter",
-          "linkedin",
-          "tiktok"
-        ]
-      }
+      "bundleIdentifier": "com.wecredi"
     },
     "android": {
       "adaptiveIcon": {
@@ -47,15 +24,7 @@
       "edgeToEdgeEnabled": true,
       "predictiveBackGestureEnabled": false,
       "package": "com.wecredi",
-      "permissions": [
-        "ACCESS_FINE_LOCATION",
-        "ACCESS_COARSE_LOCATION",
-        "CAMERA",
-        "READ_EXTERNAL_STORAGE",
-        "WRITE_EXTERNAL_STORAGE",
-        "POST_NOTIFICATIONS",
-        "VIBRATE"
-      ]
+      "permissions": []
     },
     "plugins": [
       [
@@ -74,19 +43,6 @@
         }
       ],
       [
-        "expo-location",
-        {
-          "locationAlwaysAndWhenInUsePermission": "Este aplicativo precisa de acesso à localização para mostrar veículos próximos a você."
-        }
-      ],
-      [
-        "expo-notifications",
-        {
-          "icon": "./assets/images/icon.png",
-          "color": "#fff"
-        }
-      ],
-      [
         "expo-build-properties",
         {
           "ios": {
@@ -100,11 +56,11 @@
         }
       ],
       [
-        "react-native-bottom-tabs"
-      ],
-      "./plugins/fix-detox-test.js",
-      "./plugins/set-app-display-name.js",
-      "./plugins/withAndroidQueries"
+        "react-native-bottom-tabs",
+        {
+          "theme": "material3-dynamic"
+        }
+      ]
     ]
   }
 }

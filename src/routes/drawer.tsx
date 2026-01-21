@@ -1,16 +1,16 @@
+import React from 'react';
 import { createDrawerNavigator, DrawerContentScrollView, DrawerItemList } from '@react-navigation/drawer';
-import { DescriptionFontSize, Item, List, MediumFontSize, TitleFontSize, useColors } from 'react-native-ui-devkit';
+import { DescriptionFontSize, Item, List, MediumFontSize, TitleFontSize, useColors, Icon } from 'react-native-ui-devkit';
 import { GlassView } from 'expo-glass-effect';
 import { HomeStack, AccountStack, SettingsStack, SearchStack } from './stacks';
-import { Alert, Image, Text, useColorScheme, View } from 'react-native';
-
-import userPlaceHolder from '../assets/user-placeholder.png';
+import { Alert, Image, Platform, Text, useColorScheme, View } from 'react-native';
 
 const Drawer = createDrawerNavigator();
 
 const CustomDrawerContent = (props: any) => {
   const colors = useColors();
   const isDark = useColorScheme() === 'dark';
+  const platform = Platform.OS == 'ios' ? 'ios' : 'android';
 
   const getActiveRouteName = () => {
     const route = props.state.routes[props.state.index];
@@ -22,6 +22,32 @@ const CustomDrawerContent = (props: any) => {
   const isActive = (routeName: string) => activeRoute === routeName;
 
   const activeBackgroundColor = isDark ? '#2C2C2C' : '#E0E0E0';
+
+  type IconProps = React.ComponentProps<typeof Icon>;
+
+  type PlatformIcons = {
+    ios: IconProps
+    android: IconProps
+  }
+
+  const icons: Record<string, PlatformIcons> = {
+    home: {
+      ios: { type: 'sfsymbol', name: 'house', color: '#fff', size: 18, backgroundColor: colors.primary },
+      android: { type: 'ionicons', name: 'home-outline', color: '#fff', size: 18, backgroundColor: colors.primary },
+    },
+    account: {
+      ios: { type: 'sfsymbol', name: 'person', color: '#fff', size: 18, backgroundColor: colors.secondary },
+      android: { type: 'material', name: 'account-circle', color: '#fff', size: 18, backgroundColor: colors.secondary },
+    },
+    settings: {
+      ios: { type: 'sfsymbol', name: 'gear', color: '#fff', size: 18, backgroundColor: colors.notification },
+      android: { type: 'material', name: 'settings', color: '#fff', size: 18, backgroundColor: colors.notification },
+    },
+    search: {
+      ios: { type: 'sfsymbol', name: 'magnifyingglass', color: '#fff', size: 18, backgroundColor: colors.secondary },
+      android: { type: 'material', name: 'search', color: '#fff', size: 18, backgroundColor: colors.secondary },
+    },
+  }
 
   return (
     <DrawerContentScrollView
@@ -50,7 +76,7 @@ const CustomDrawerContent = (props: any) => {
           <List
             data={[{
               title: 'Início',
-              icon: { type: 'sfsymbol', name: 'gear', color: '#fff', size: 18 },
+              icon: icons.home[platform],
               color: isActive('Home') ? { title: colors.primary } : undefined,
               onPress: () => props.navigation.navigate('Home'),
               style: isActive('Home') ? { backgroundColor: activeBackgroundColor } : undefined
@@ -61,21 +87,21 @@ const CustomDrawerContent = (props: any) => {
             data={[
               {
                 title: 'Conta',
-                icon: { type: 'sfsymbol', name: 'person', color: '#fff', size: 18, backgroundColor: '#FF383C' },
+                icon: icons.account[platform],
                 onPress: () => props.navigation.navigate('Account'),
                 color: isActive('Account') ? { title: colors.primary } : undefined,
                 style: isActive('Account') ? { backgroundColor: activeBackgroundColor } : undefined
               },
               {
                 title: 'Configurações',
-                icon: { type: 'sfsymbol', name: 'gear', color: '#fff', size: 18, backgroundColor: colors.primary },
+                icon: icons.settings[platform],
                 onPress: () => props.navigation.navigate('Settings'),
                 color: isActive('Settings') ? { title: colors.primary } : undefined,
                 style: isActive('Settings') ? { backgroundColor: activeBackgroundColor } : undefined
               },
               {
                 title: 'Busca',
-                icon: { type: 'sfsymbol', name: 'magnifyingglass', color: '#fff', size: 18, backgroundColor: '#6155F5' },
+                icon: icons.search[platform],
                 onPress: () => props.navigation.navigate('Search'),
                 color: isActive('Search') ? { title: colors.primary } : undefined,
                 style: isActive('Search') ? { backgroundColor: activeBackgroundColor } : undefined

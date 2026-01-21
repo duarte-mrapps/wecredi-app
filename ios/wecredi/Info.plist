@@ -77,7 +77,6 @@
     <string>Este aplicativo precisa de acesso à galeria de fotos para selecionar imagens.</string>
     <key>RCTNewArchEnabled</key>
     <true/>
-
     <key>UILaunchStoryboardName</key>
     <string>SplashScreen</string>
     <key>UIRequiredDeviceCapabilities</key>

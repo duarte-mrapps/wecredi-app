@@ -3,8 +3,9 @@ import { createNativeStackNavigator } from '@react-navigation/native-stack';
 import { isDeviceTablet } from '../utils';
 import { DrawerRoutes } from './drawer';
 import { Tabs } from './tabs';
+import { Login } from '../screens/Login';
 
-const Routes = () => {
+const MainRoutes = () => {
   const Stack = createNativeStackNavigator();
 
   if (isDeviceTablet) {
@@ -24,6 +25,17 @@ const Routes = () => {
       <Stack.Screen name="Init" component={Tabs} options={{ title: 'Wecredi' }} />
     </Stack.Navigator>
   )
+}
+
+const Routes = () => {
+  const Stack = createNativeStackNavigator();
+
+  return (
+    <Stack.Navigator screenOptions={{ headerShown: false }}>
+      <Stack.Screen name="Login" component={Login} options={{ presentation: 'formSheet' }} />
+      <Stack.Screen name="Main" component={MainRoutes} />
+    </Stack.Navigator>
+  );
 }
 
 const Navigation = () => {
