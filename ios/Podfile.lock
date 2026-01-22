@@ -89,7 +89,7 @@ PODS:
     - ExpoModulesCore
   - ExpoSystemUI (6.0.9):
     - ExpoModulesCore
-  - ExpoUI (0.2.0-beta.9):
+  - ExpoUI (55.0.0-beta.0):
     - ExpoModulesCore
   - ExpoWebBrowser (15.0.9):
     - ExpoModulesCore
@@ -2495,7 +2495,7 @@ SPEC CHECKSUMS:
   ExpoSplashScreen: f46795cd52cdad65d30e54043f04c86401c4f85d
   ExpoSymbols: ef7b8ac77ac2d496b1bc3f0f7daf5e19c3a9933a
   ExpoSystemUI: 4611247a411f231229f7e04449856035bd18ba21
-  ExpoUI: ca221e95d94df2662b9184ee8abd606106d1ead8
+  ExpoUI: dc07a4ef9be1eea40f04c96dfc5035fd21e29a1c
   ExpoWebBrowser: 35223474c19e261c0661ecc7caa513d054244ab5
   FBLazyVector: e95a291ad2dadb88e42b06e0c5fb8262de53ec12
   hermes-engine: 9f4dfe93326146a1c99eb535b1cb0b857a3cd172
