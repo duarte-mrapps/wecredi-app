@@ -35,7 +35,7 @@ import {
 import { DescriptionFontSize } from 'react-native-ui-devkit';
 import { SafeAreaView } from 'react-native-safe-area-context';
 
-export const LoginIos = () => {
+export const Login = () => {
   const navigation = useNavigation<any>();
 
   const emailRef = useRef<TextFieldRef>(null)

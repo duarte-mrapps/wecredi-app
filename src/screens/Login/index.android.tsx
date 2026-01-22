@@ -4,7 +4,7 @@ import { TitleFontSize, useColors, DescriptionFontSize, List, Button, Item, Icon
 import { useNavigation } from '@react-navigation/native';
 import { SafeAreaView } from 'react-native-safe-area-context';
 
-export const LoginAndroid = () => {
+export const Login = () => {
   const colors = useColors();
   const navigation = useNavigation<any>();
   const [email, setEmail] = useState('');
