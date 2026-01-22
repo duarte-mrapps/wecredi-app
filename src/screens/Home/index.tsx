@@ -19,10 +19,6 @@ const Home = () => {
           onPress: () => { },
         },
         {
-          type: 'spacing',
-          spacing: 1,
-        },
-        {
           sharesBackground: false,
           type: 'button',
           label: 'Heart',

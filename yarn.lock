@@ -8276,6 +8276,11 @@ react-native-sfsymbols@^1.2.2:
   resolved "https://registry.yarnpkg.com/react-native-sfsymbols/-/react-native-sfsymbols-1.2.2.tgz#9216b0725cf3ea1f8d4d621d9239b1c47cc6eaf1"
   integrity sha512-/9zshSuIlvCTnD9yfrD7/AbO/Vhlcml8GEri9gLa+sRhZL2ZFvqTOopiRJdC9+eWO+NVtLN+qX8FNXm5y5URSQ==
 
+react-native-typography@^1.4.1:
+  version "1.4.1"
+  resolved "https://registry.yarnpkg.com/react-native-typography/-/react-native-typography-1.4.1.tgz#2d05cb5935a2f7fdb6b43bbde93d60f1324578e3"
+  integrity sha512-dc9Zfs4jUdq4ygx4/KwO6jKTERBu6cRrfPJGntw/pA+D6BMjlWfMNuhZ/69vf4Zpsnt9s4AGe+Z/V1QFYaCXAA==
+
 react-native-ui-devkit@^2.0.9:
   version "2.0.9"
   resolved "https://registry.yarnpkg.com/react-native-ui-devkit/-/react-native-ui-devkit-2.0.9.tgz#e3c0e6cfb2831fb21a0b19f9cb7a4ca246eafed0"

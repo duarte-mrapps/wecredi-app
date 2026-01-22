@@ -30,7 +30,8 @@ import {
   scrollDismissesKeyboard,
   scrollDisabled,
   submitLabel,
-  listRowInsets
+  listRowInsets,
+  background
 } from '@expo/ui/swift-ui/modifiers';
 import { DescriptionFontSize } from 'react-native-ui-devkit';
 import { SafeAreaView } from 'react-native-safe-area-context';
@@ -44,10 +45,10 @@ export const Login = () => {
   const [password, setPassword] = useState('');
 
   const handleLogin = () => {
-    if (!email || !password) {
-      Alert.alert('Voce precisa digitar sua conta WeCredi e a sua senha para continuar');
-      return;
-    }
+    // if (!email || !password) {
+    //   Alert.alert('Voce precisa digitar sua conta WeCredi e a sua senha para continuar');
+    //   return;
+    // }
     navigation.replace('Main');
   };
 

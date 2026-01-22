@@ -1,12 +1,9 @@
 import React from 'react';
 import { createDrawerNavigator, DrawerContentScrollView, DrawerItemList } from '@react-navigation/drawer';
-
-import { Platform, PlatformColor, useColorScheme, View } from 'react-native';
-import { useColors, Icon } from 'react-native-ui-devkit';
+import { DescriptionFontSize, Item, List, MediumFontSize, TitleFontSize, useColors, Icon } from 'react-native-ui-devkit';
 import { GlassView } from 'expo-glass-effect';
 import { HomeStack, AccountStack, SettingsStack, SearchStack } from './stacks';
-import { Host, HStack, Image, List, Section, Text, VStack } from '@expo/ui/swift-ui';
-import { font, foregroundStyle, frame, } from '@expo/ui/swift-ui/modifiers';
+import { Alert, Image, Platform, Text, useColorScheme, View } from 'react-native';
 
 const Drawer = createDrawerNavigator();
 
@@ -60,31 +57,57 @@ const CustomDrawerContent = (props: any) => {
     >
       <GlassView style={{ flex: 1, borderRadius: 20 }} glassEffectStyle='regular' >
         <View style={{ flexGrow: 1 }}>
-          <Host style={{ flex: 1 }}>
-            <List>
-              <Section>
-                <HStack spacing={12}>
-                  <Image
-                    systemName='person.crop.circle.fill'
-                    size={60}
-                    modifiers={[
-                      frame({ width: 60, height: 60 }),
-                      foregroundStyle({ type: 'color', color: PlatformColor('systemBlue') })
-                    ]}
-                  />
-                  <VStack alignment='leading' spacing={4}>
-                    <Text
-                      modifiers={[font({ size: 28, weight: 'bold' })]}
-                    >
-                      Conta WeCredi
-                    </Text>
-                    <Text>Inicie à sessão para acessar seus dados do iCloud, a App Store, serviços da Apple e mais</Text>
-                  </VStack>
-                </HStack>
-              </Section>
-            </List>
-          </Host>
 
+          <View style={{ flexDirection: 'row', alignItems: 'center', padding: 16, gap: 16 }}>
+            <Image
+              source={require('../assets/user-placeholder.png')}
+              style={{ width: 70, height: 70, borderRadius: 70 }}
+            />
+            <View style={{ flex: 1, gap: 4 }}>
+              <Text style={[TitleFontSize(1.2), { color: colors.text, fontWeight: 'bold' }]}>
+                Conta WeCredi
+              </Text>
+              <Text style={[DescriptionFontSize(1.2), { color: colors.text, fontWeight: '400' }]}>
+                Inicie à sessão para acessar seus dados do iCloud, a App Store, serviços da Apple e mais
+              </Text>
+            </View>
+          </View>
+
+          <List
+            data={[{
+              title: 'Início',
+              icon: icons.home[platform],
+              color: isActive('Home') ? { title: colors.primary } : undefined,
+              onPress: () => props.navigation.navigate('Home'),
+              style: isActive('Home') ? { backgroundColor: activeBackgroundColor } : undefined
+            }]}
+          />
+
+          <List
+            data={[
+              {
+                title: 'Conta',
+                icon: icons.account[platform],
+                onPress: () => props.navigation.navigate('Account'),
+                color: isActive('Account') ? { title: colors.primary } : undefined,
+                style: isActive('Account') ? { backgroundColor: activeBackgroundColor } : undefined
+              },
+              {
+                title: 'Configurações',
+                icon: icons.settings[platform],
+                onPress: () => props.navigation.navigate('Settings'),
+                color: isActive('Settings') ? { title: colors.primary } : undefined,
+                style: isActive('Settings') ? { backgroundColor: activeBackgroundColor } : undefined
+              },
+              {
+                title: 'Busca',
+                icon: icons.search[platform],
+                onPress: () => props.navigation.navigate('Search'),
+                color: isActive('Search') ? { title: colors.primary } : undefined,
+                style: isActive('Search') ? { backgroundColor: activeBackgroundColor } : undefined
+              }
+            ]}
+          />
         </View>
 
       </GlassView>
