@@ -1,0 +1,65 @@
+diff --git a/node_modules/@expo/ui/ios/HostView.swift b/node_modules/@expo/ui/ios/HostView.swift
+index b964271..ad8b245 100644
+--- a/node_modules/@expo/ui/ios/HostView.swift
++++ b/node_modules/@expo/ui/ios/HostView.swift
+@@ -31,7 +31,7 @@ internal enum ExpoLayoutDirection: String, Enumerable {
+   }
+ }
+ 
+-internal final class HostViewProps: ExpoSwiftUI.ViewProps, ExpoSwiftUI.SafeAreaControllable {
++internal final class HostViewProps: ExpoSwiftUI.ViewProps {
+   @Field var useViewportSizeMeasurement: Bool = false
+   @Field var colorScheme: ExpoColorScheme?
+   @Field var layoutDirection: ExpoLayoutDirection = .leftToRight
+@@ -219,3 +219,4 @@ private struct LayoutDirectionModifier: ViewModifier {
+     }
+   }
+ }
++
+diff --git a/node_modules/@expo/ui/ios/RNHostView.swift b/node_modules/@expo/ui/ios/RNHostView.swift
+index 35efd56..9dbd3e3 100644
+--- a/node_modules/@expo/ui/ios/RNHostView.swift
++++ b/node_modules/@expo/ui/ios/RNHostView.swift
+@@ -2,7 +2,7 @@
+ 
+ import ExpoModulesCore
+ 
+-public final class RNHostView: ExpoView, ExpoSwiftUI.RNHostViewProtocol {
++public final class RNHostView: ExpoView {
+   public required init(appContext: AppContext? = nil) {
+     super.init(appContext: appContext)
+     ExpoUITouchHandlerHelper.createAndAttachTouchHandler(for: self)
+@@ -19,3 +19,4 @@ public final class RNHostView: ExpoView, ExpoSwiftUI.RNHostViewProtocol {
+     }
+   }
+ }
++
+diff --git a/node_modules/@expo/ui/ios/UIBaseViewProps.swift b/node_modules/@expo/ui/ios/UIBaseViewProps.swift
+index 6725c78..0a123bc 100644
+--- a/node_modules/@expo/ui/ios/UIBaseViewProps.swift
++++ b/node_modules/@expo/ui/ios/UIBaseViewProps.swift
+@@ -16,11 +16,21 @@ open class UIBaseViewProps: ExpoSwiftUI.ViewProps {
+    */
+   internal var defaultFrameAlignment: Alignment { .center }
+ 
+-  public required init() {
++  // MARK: - Initializers
++
++  // Match the designated initializer from the superclass exactly.
++  public required override init() {
+     super.init()
+   }
+ 
+-  public required init(rawProps: [String: Any], context: AppContext) throws {
+-    try super.init(rawProps: rawProps, context: context)
++  public convenience init(appContext context: AppContext) {
++    self.init()
++  }
++
++  // Convenience initializer that supplies empty raw props if needed by call sites.
++  // This does not override any superclass initializer.
++  public convenience init(appContext context: AppContext, rawProps: [String: Any] = [:]) {
++    self.init(appContext: context)
+   }
+ }
++

@@ -7,12 +7,14 @@ import { GlassView } from 'expo-glass-effect';
 import { HomeStack, AccountStack, SettingsStack, SearchStack } from './stacks';
 import { Host, HStack, Image, List, Section, Text, VStack } from '@expo/ui/swift-ui';
 import { font, foregroundStyle, frame, } from '@expo/ui/swift-ui/modifiers';
+import { useSystemFonts } from '@/modules/expo-system-fonts';
 
 const Drawer = createDrawerNavigator();
 
 const CustomDrawerContent = (props: any) => {
   const colors = useColors();
   const isDark = useColorScheme() === 'dark';
+  const fonts = useSystemFonts()
   const platform = Platform.OS == 'ios' ? 'ios' : 'android';
 
   const getActiveRouteName = () => {
@@ -74,7 +76,7 @@ const CustomDrawerContent = (props: any) => {
                   />
                   <VStack alignment='leading' spacing={4}>
                     <Text
-                      modifiers={[font({ size: 28, weight: 'bold' })]}
+                      modifiers={[font({ size: fonts?.largeTitle.fontSize, weight: fonts?.largeTitle.fontWeight })]}
                     >
                       Conta WeCredi
                     </Text>

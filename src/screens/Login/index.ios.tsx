@@ -31,14 +31,16 @@ import {
   scrollDisabled,
   submitLabel,
   listRowInsets,
-  background
+  multilineTextAlignment
 } from '@expo/ui/swift-ui/modifiers';
 import { DescriptionFontSize } from 'react-native-ui-devkit';
 import { SafeAreaView } from 'react-native-safe-area-context';
+import { useSystemFonts } from '@/modules/expo-system-fonts';
 
 export const Login = () => {
   const navigation = useNavigation<any>();
-
+  const systemFonts = useSystemFonts();
+  console.log(systemFonts)
   const emailRef = useRef<TextFieldRef>(null)
   const passwordRef = useRef<TextFieldRef>(null)
   const [email, setEmail] = useState('');
@@ -67,17 +69,19 @@ export const Login = () => {
               <Spacer minLength={40} />
               <Text
                 modifiers={[
-                  font({ size: 44, weight: 'bold' }),
+                  font({ size: systemFonts?.largeTitle.fontSize, weight: 'bold' }),
                   frame({ maxWidth: Infinity, alignment: 'center' }),
+
                 ]}
               >
                 WeCredi®
               </Text>
               <Text
                 modifiers={[
-                  font({ size: 17 }),
+                  font({ size: systemFonts?.headline.fontSize, weight: systemFonts?.headline.fontWeight }),
                   foregroundStyle({ type: 'color', color: PlatformColor('secondaryLabel') }),
                   frame({ maxWidth: Infinity, alignment: 'center' }),
+                  multilineTextAlignment('center')
                 ]}
               >
                 We buy, you use, and then it's yours
@@ -130,7 +134,7 @@ export const Login = () => {
                 <Image systemName='info.circle.fill' />
                 <Text
                   modifiers={[
-                    font({ size: 17 }),
+                    font({ size: systemFonts?.body.fontSize, weight: systemFonts?.body.fontWeight }),
                   ]}
                 >
                   Esqueci a senha
@@ -155,6 +159,7 @@ export const Login = () => {
               <Text
                 modifiers={[
                   frame({ maxWidth: Infinity }),
+                  font({ size: systemFonts?.body.fontSize, weight: systemFonts?.body.fontWeight }),
                 ]}
               >
                 Entrar

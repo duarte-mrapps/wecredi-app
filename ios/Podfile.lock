@@ -87,6 +87,8 @@ PODS:
     - ExpoModulesCore
   - ExpoSymbols (1.0.7):
     - ExpoModulesCore
+  - ExpoSystemFonts (1.0.0):
+    - ExpoModulesCore
   - ExpoSystemUI (6.0.9):
     - ExpoModulesCore
   - ExpoUI (55.0.0-beta.0):
@@ -2177,6 +2179,7 @@ DEPENDENCIES:
   - ExpoModulesCore (from `../node_modules/expo-modules-core`)
   - ExpoSplashScreen (from `../node_modules/expo-splash-screen/ios`)
   - ExpoSymbols (from `../node_modules/expo-symbols/ios`)
+  - ExpoSystemFonts (from `../modules/expo-system-fonts/ios`)
   - ExpoSystemUI (from `../node_modules/expo-system-ui/ios`)
   - "ExpoUI (from `../node_modules/@expo/ui/ios`)"
   - ExpoWebBrowser (from `../node_modules/expo-web-browser/ios`)
@@ -2310,6 +2313,8 @@ EXTERNAL SOURCES:
     :path: "../node_modules/expo-splash-screen/ios"
   ExpoSymbols:
     :path: "../node_modules/expo-symbols/ios"
+  ExpoSystemFonts:
+    :path: "../modules/expo-system-fonts/ios"
   ExpoSystemUI:
     :path: "../node_modules/expo-system-ui/ios"
   ExpoUI:
@@ -2494,6 +2499,7 @@ SPEC CHECKSUMS:
   ExpoModulesCore: e37f2bfc6f5b553989e1a67e15b7c5c8bbcac0cc
   ExpoSplashScreen: f46795cd52cdad65d30e54043f04c86401c4f85d
   ExpoSymbols: ef7b8ac77ac2d496b1bc3f0f7daf5e19c3a9933a
+  ExpoSystemFonts: dc1338c3a11d0feb08ee63d7c724dd59d4e321da
   ExpoSystemUI: 4611247a411f231229f7e04449856035bd18ba21
   ExpoUI: dc07a4ef9be1eea40f04c96dfc5035fd21e29a1c
   ExpoWebBrowser: 35223474c19e261c0661ecc7caa513d054244ab5

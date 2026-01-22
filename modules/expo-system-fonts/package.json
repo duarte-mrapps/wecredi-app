@@ -1,0 +1,11 @@
+{
+  "name": "expo-system-fonts",
+  "version": "1.0.0",
+  "description": "Exposes system dynamic type metrics to React Native",
+  "main": "index.ts",
+  "types": "index.ts",
+  "peerDependencies": {
+    "expo": "*",
+    "react": "*"
+  }
+}
