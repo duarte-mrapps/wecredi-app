@@ -35,12 +35,13 @@ import {
 } from '@expo/ui/swift-ui/modifiers';
 import { DescriptionFontSize } from 'react-native-ui-devkit';
 import { SafeAreaView } from 'react-native-safe-area-context';
-import { useSystemFonts } from '@/modules/expo-system-fonts';
+import { useSystemFonts, useSystemColors } from '@/modules/rn-ios-system-tokens';
 
 export const Login = () => {
   const navigation = useNavigation<any>();
   const systemFonts = useSystemFonts();
-  console.log(systemFonts)
+  const systemColors = useSystemColors();
+
   const emailRef = useRef<TextFieldRef>(null)
   const passwordRef = useRef<TextFieldRef>(null)
   const [email, setEmail] = useState('');
@@ -71,7 +72,7 @@ export const Login = () => {
                 modifiers={[
                   font({ size: systemFonts?.largeTitle.fontSize, weight: 'bold' }),
                   frame({ maxWidth: Infinity, alignment: 'center' }),
-
+                  foregroundStyle({ type: 'color', color: systemColors?.label }),
                 ]}
               >
                 WeCredi®
@@ -79,7 +80,8 @@ export const Login = () => {
               <Text
                 modifiers={[
                   font({ size: systemFonts?.headline.fontSize, weight: systemFonts?.headline.fontWeight }),
-                  foregroundStyle({ type: 'color', color: PlatformColor('secondaryLabel') }),
+                  foregroundStyle({ type: 'color', color: systemColors?.secondaryLabel }),
+                  // foregroundStyle({ type: 'color', color: PlatformColor('secondaryLabel') }),
                   frame({ maxWidth: Infinity, alignment: 'center' }),
                   multilineTextAlignment('center')
                 ]}
@@ -170,8 +172,22 @@ export const Login = () => {
       </Host>
 
       <View style={{ flexDirection: 'column', gap: 8, padding: 28, marginTop: 'auto' }}>
-        <RNText style={[DescriptionFontSize(1.2), { color: PlatformColor('secondaryLabel'), textAlign: 'center' }]}>
-          Ao acessar, você concorda com nossos <RNText suppressHighlighting onPress={() => { Alert.alert('Termos de Uso') }} style={{ color: PlatformColor('systemBlue') }}>Termos de Uso</RNText> e <RNText suppressHighlighting onPress={() => { Alert.alert('Política de Privacidade') }} style={{ color: PlatformColor('systemBlue') }}>Política de Privacidade</RNText>
+        <RNText
+          style={[
+            { fontSize: systemFonts?.callout.fontSize, color: systemColors?.secondaryLabel, textAlign: 'center' }
+          ]}
+        >
+          Ao acessar, você concorda com nossos <RNText
+            suppressHighlighting
+            onPress={() => { Alert.alert('Termos de Uso') }}
+            style={{ color: systemColors?.link }}>
+            Termos de Uso
+          </RNText> e <RNText
+            suppressHighlighting
+            onPress={() => { Alert.alert('Política de Privacidade') }}
+            style={{ color: systemColors?.link }}>
+            Política de Privacidade
+          </RNText>
         </RNText>
       </View>
     </SafeAreaView>

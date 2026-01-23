@@ -7,7 +7,7 @@ import { GlassView } from 'expo-glass-effect';
 import { HomeStack, AccountStack, SettingsStack, SearchStack } from './stacks';
 import { Host, HStack, Image, List, Section, Text, VStack } from '@expo/ui/swift-ui';
 import { font, foregroundStyle, frame, } from '@expo/ui/swift-ui/modifiers';
-import { useSystemFonts } from '@/modules/expo-system-fonts';
+import { useSystemFonts } from '@/modules/rn-ios-system-tokens';
 
 const Drawer = createDrawerNavigator();
 
